@@ -1,25 +1,34 @@
-// Définition des broches pour le contrôle du moteur et des boutons
-const int pinEnable = 2;    // Broche de contrôle de la vitesse du moteur (PWM)
-const int pinEnableA = 3;
-const int pinEnableB = 4;
-const int pinEnableC = 5;
-const int pinEnableD = 6;
+
+/* ----------------------------------------------- */
+/*           DÉCLARATION DES VARIABLES DES         */
+/*       BOUTONS, MOTEUR ET DES AUTORISATIONS      */
+/* ----------------------------------------------- */
+
+const int pinEnable = 2 ;               // Broche de contrôle de la vitesse du moteur (PWM)
+const int pinEnableA = 3 ;
+const int pinEnableB = 4 ;
+const int pinEnableC = 5 ;
+const int pinEnableD = 6 ;
+
+/* ----------------------------------------------- */
+/*              DÉCLARATION DES BOUTONS            */
+/* ----------------------------------------------- */
 
 
-const int pinButton_M1_OUVRE = 36;
-const int pinButton_M1_FERME = 38;  // Broche pour le deuxième bouton
+const int pinButton_M1_OUVRE = 36 ;     // Bouton pour l'OUVERTURE de la pince sur le PIN 36 de l'Arduino
+const int pinButton_M1_FERME = 38 ;     // Bouton pour la FERMETURE de la pince sur le PIN 38 de l'Arduino
 
-const int pinButton_M2_HAUT = 39;
-const int pinButton_M2_BAS = 40;
+const int pinButton_M2_HAUT = 39 ;      // Bouton pour le mouvement HAUT du poignet sur le PIN 39 de l'Arduino
+const int pinButton_M2_BAS = 40 ;       // Bouton pour le mouvement BAS du poignet sur le PIN 40 de l'Arduino
 
-const int pinButton_M3_HAUT = 41;
-const int pinButton_M3_BAS = 42;
+const int pinButton_M3_HAUT = 41 ;      // Bouton pour le mouvement HAUT du coude sur le PIN 41 de l'Arduino
+const int pinButton_M3_BAS = 42 ;       // Bouton pour le mouvement BAS du coude sur le PIN 42 de l'Arduino
 
-const int pinButton_M4_AV = 43;
-const int pinButton_M4_AR = 44;
+const int pinButton_M4_AV = 43 ;        // Bouton pour le mouvement AVANT de l'épaule sur le PIN 43 de l'Arduino
+const int pinButton_M4_AR = 44 ;        // Bouton pour le mouvement ARRIÈRE de l'épaule sur le PIN 44 de l'Arduino
 
-const int pinButton_M5_CW = 45;
-const int pinButton_M5_CCW = 46;
+const int pinButton_M5_CW = 45 ;        // Bouton pour le mouvement SENS HORAIRE de la base sur le PIN 45 de l'Arduino
+const int pinButton_M5_CCW = 46 ;       // Bouton pour le mouvement SENS ANTI-HORAIRE de la base sur le PIN 46 de l'Arduino
 
 ////////////////////////////////////////////////////////////////////////////
 
@@ -41,53 +50,69 @@ const int pinInput10 = 31;
 ////////////////////////////////////////////////////////////////////////////
 
 
-
+/* ----------------------------------------------- */
+/*                 VARIABLES D'ÉTATS               */
+/* ----------------------------------------------- */
 
 
 // Variables pour stocker l'état des boutons
-int buttonState1_M1_OUVRE = 0;
-int buttonState2_M1_FERME = 0;
 
-int buttonState3_M2_HAUT = 0;
-int buttonState4_M2_BAS = 0;
+int buttonState1_M1_OUVRE = 0 ;         // Variable d'état pour l'OUVERTURE de la pince
+int buttonState2_M1_FERME = 0 ;         // Variable d'état pour la FERMETURE de la pince
 
-int buttonState5_M3_HAUT = 0;
-int buttonState6_M3_BAS = 0;
+int buttonState3_M2_HAUT = 0 ;          // Variable d'état pour la position HAUT du poignet
+int buttonState4_M2_BAS = 0 ;           // Variable d'état pour la position BAS du poignet
 
-int buttonState7_M4_AV = 0;
-int buttonState8_M4_AR = 0;
+int buttonState5_M3_HAUT = 0 ;          // Variable d'état pour la position HAUT du coude
+int buttonState6_M3_BAS = 0 ;           // Variable détat pour la position BAS du coude
 
-int buttonState9_M5_CW = 0;
-int buttonState10_M5_CCW = 0;
+int buttonState7_M4_AV = 0 ;            // Variable d'état pour un mouvement vers l'AVANT de l'épaule
+int buttonState8_M4_AR = 0 ;            // Variable d'état pour un mouvement vers l'ARRIÉRE de l'épaule
+
+int buttonState9_M5_CW = 0 ;            // Variable d'état pour un mouvement dans le SENS HORAIRE de la base
+int buttonState10_M5_CCW = 0 ;          // Variable d'état pour un mouvement dans le SENS ANTI-HORAIRE de la base
 
 
 
 void setup() {
-  // Configuration des broches en sortie pour le contrôle du moteur
-  pinMode(pinEnable, OUTPUT);
-  pinMode(pinEnableA, OUTPUT);
-  pinMode(pinEnableB, OUTPUT);
-  pinMode(pinEnableC, OUTPUT);
-  pinMode(pinEnableD, OUTPUT);
+
+
+/* ----------------------------------------------- */
+/*            CONFIGURATION DES BROCHES            */
+/*       EN SORTIE POUR LE CONTRÔLE DU MOTEUR      */
+/* ----------------------------------------------- */
+
+  pinMode(pinEnable, OUTPUT) ;
+  pinMode(pinEnableA, OUTPUT) ;
+  pinMode(pinEnableB, OUTPUT) ;
+  pinMode(pinEnableC, OUTPUT) ;
+  pinMode(pinEnableD, OUTPUT) ;
 
 
 
-  pinMode(pinInput1, OUTPUT);
-  pinMode(pinInput2, OUTPUT);
+  pinMode(pinInput1, OUTPUT) ;          // PIN INPUT 1 en sortie
+  pinMode(pinInput2, OUTPUT) ;          // PIN INPUT 2 en sortie
 
-  pinMode(pinInput3, OUTPUT);
-  pinMode(pinInput4, OUTPUT);
+  pinMode(pinInput3, OUTPUT) ;          // PIN INPUT 3 en sortie
+  pinMode(pinInput4, OUTPUT) ;          // PIN INPUT 4 en sortie
 
-  pinMode(pinInput5, OUTPUT);
-  pinMode(pinInput6, OUTPUT);
+  pinMode(pinInput5, OUTPUT) ;          // PIN INPUT 5 en sortie
+  pinMode(pinInput6, OUTPUT) ;          // PIN INPUT 6 en sortie
 
-  pinMode(pinInput7, OUTPUT);
-  pinMode(pinInput8, OUTPUT);
+  pinMode(pinInput7, OUTPUT) ;          // PIN INPUT 7 en sortie
+  pinMode(pinInput8, OUTPUT) ;          // PIN INPUT 8 en sortie
 
-  pinMode(pinInput9, OUTPUT);
-  pinMode(pinInput10, OUTPUT);
+  pinMode(pinInput9, OUTPUT) ;          // PIN INPUT 9 en sortie
+  pinMode(pinInput10, OUTPUT) ;         // PIN INPUT 10 en sortie
 
-  // Configuration des broches pour les boutons en entrée
+
+/* ----------------------------------------------- */
+/*            CONFIGURATION DES BROCHES            */
+/*            POUR LES BOUTONS EN ENTRÉE           */
+/* ----------------------------------------------- */
+
+
+
   pinMode(pinButton_M1_OUVRE, INPUT_PULLUP);
   pinMode(pinButton_M1_FERME, INPUT_PULLUP);
 
