@@ -1,8 +1,12 @@
-# SAE4-BRAS-ROBOT-M5STACK
 
-**LE DOCUMENT READ-ME SERA REMPLI AU COURS DE NOTRE AVANCÉE**
+# SAE Bras robotisé avec M5 StickC Plus
 
-----------------------------------------------------------------
+### Auteurs de la SAE
+- SAHIN Eren
+- PRIZZI-SCHERER Benjamin
+- SCHMITT Thomas
 
-**Charger de la SAE :** SAHIN Eren, PRIZZI-SCHERER benjamin, SCHMITT Thomas
-**Professeur référents :** HUEBER Eric, MOURLLION Benjamin
+### Professeurs tuteur de la SAE
+- HUEBER Eric
+- MOURLLION Benjamin
+
