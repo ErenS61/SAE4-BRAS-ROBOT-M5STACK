@@ -5,4 +5,4 @@
 ----------------------------------------------------------------
 
 **Charger de la SAE :** SAHIN Eren, PRIZZI-SCHERER benjamin, SCHMITT Thomas
-<sub>**Professeur référents :** HUEBER Eric, MOURLLION Benjamin</sub>
+**Professeur référents :** HUEBER Eric, MOURLLION Benjamin
