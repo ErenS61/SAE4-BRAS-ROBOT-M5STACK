@@ -1,4 +1,5 @@
-![alt](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Logo%20IUT.png)
+![image](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/assets/95621105/5fda3c03-2fd9-4435-a8bb-d233124cec60)
+
 # SAE Bras robotisé avec M5 StickC Plus
 
 ### Auteurs de la SAE
