@@ -1,4 +1,4 @@
-https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/issues/4#issue-2273522207
+![alt]
 # SAE Bras robotisé avec M5 StickC Plus
 
 ### Auteurs de la SAE
