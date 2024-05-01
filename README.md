@@ -1,4 +1,7 @@
-![Image](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Logo_Universit%C3%A9_de_Haute-Alsace_-_UHA.png)
+<img src="Images/Republique_Francaise.jpg" width="140">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/Logo_Université_de_Haute-Alsace_-_UHA.png" width="330">
+
+***
+
 # SAE Bras robotisé avec M5 StickC Plus
 
 ### Auteurs de la SAE
@@ -7,9 +10,28 @@
 - SCHMITT Thomas
 
 ### Professeurs tuteur de la SAE
-- HUEBER Eric
-- MOURLLION Benjamin
+- M. HUEBER Eric
+- M. MOURLLION Benjamin
 
+***
+
+## Matériel à notre disposition
+- Bras robotisé
+- Arduino Mega 2560
+- M5 StickC Plus
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
@@ -24,3 +46,4 @@
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+-->
