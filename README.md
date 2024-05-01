@@ -1,5 +1,4 @@
-![image](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/assets/95621105/5fda3c03-2fd9-4435-a8bb-d233124cec60)
-
+![Image](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Logo_Universit%C3%A9_de_Haute-Alsace_-_UHA.png)
 # SAE Bras robotisé avec M5 StickC Plus
 
 ### Auteurs de la SAE
