@@ -40,6 +40,17 @@
 `Les problèmes rencontrées :`
 
 
+***
+
+### 02/05/2024 (Libre)
+`Ce qu'on a fait :`
+- Comprendre le fonctionnement des capteurs de fin de course
+- Incorporation des capteurs de fin de course dans le programme
+
+`Les problèmes rencontrées :`
+- L'incorporation des capteurs de fin de course dans le programme n'a pas donné le résultat attendu. <br>
+Quand le capteur de fin de course était à l'état actif, le mouvement du coude vers l'avant ne s'arrêter pas.
+
 
 
 
