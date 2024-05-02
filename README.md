@@ -21,7 +21,7 @@
 ![GIF](Images/giphy-ezgif.com-optimize.gif)
 
 
-
+Pour la photo, [cliquer ici](Documentation/Arduino-Mega-Pinout.jpg)
 
 
 
