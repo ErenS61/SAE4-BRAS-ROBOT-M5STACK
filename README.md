@@ -8,19 +8,19 @@
 #### SAHIN Eren / PRIZZI-SCHERER Benjamin / SCHMITT Thomas
 
 ### Professeurs tuteur de la SAE :
-#### M. HUEBER Eric / M. MOURLLION Benjamin
+### M. HUEBER Eric / M. MOURLLION Benjamin
 
 ***
 
-## Matériel à notre disposition
+### Matériel à notre disposition
 - Bras robotisé
 - Arduino Mega 2560
 - M5 StickC Plus
 
-# CECI EST UN TEST POUR UN GIF DANS UN MARKDOWN. MERCI DE NE PAS LE PRENDRE EN COMPTE.
+### CECI EST UN TEST POUR UN GIF DANS UN MARKDOWN. MERCI DE NE PAS LE PRENDRE EN COMPTE.
 ![GIF](Images/giphy-ezgif.com-optimize.gif)
 
-# CECI EST UN TEST POUR UN LIEN HYPERTEXTE DANS UN MARKDOWN. MERCI DE NE PAS LE PRENDRE EN COMPTE.
+### CECI EST UN TEST POUR UN LIEN HYPERTEXTE DANS UN MARKDOWN. MERCI DE NE PAS LE PRENDRE EN COMPTE.
 Pour la photo, [cliquer ici](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Documentation/Arduino-Mega-Pinout.jpg?raw=true)
 
 
