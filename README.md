@@ -21,8 +21,7 @@
 ![GIF](Images/giphy-ezgif.com-optimize.gif)
 
 
-Pour la photo, [cliquer ici](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Documentation/Arduino-Mega-Pinout.jpg)
-
+Pour la photo, [cliquer ici](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Documentation/Arduino-Mega-Pinout.jpg?raw=true)
 
 
 
