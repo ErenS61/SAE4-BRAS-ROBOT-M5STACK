@@ -10,6 +10,18 @@ const int pinEnableB = 4 ;
 const int pinEnableC = 5 ;
 const int pinEnableD = 6 ;
 
+
+//////////////////////////////////////////////
+
+
+const int pinFinCourse_M1 = 53;
+const int pinFinCourse_M2 = 52;
+const int pinFinCourse_M3 = 51;
+const int pinFinCourse_M4 = 50;
+const int pinFinCourse_M5 = 49;
+
+///////////////////////////////////////////////
+
 /* ----------------------------------------------- */
 /*              DÉCLARATION DES BOUTONS            */
 /* ----------------------------------------------- */
@@ -73,6 +85,15 @@ int buttonState9_M5_CW = 0 ;            // Variable d'état pour un mouvement da
 int buttonState10_M5_CCW = 0 ;          // Variable d'état pour un mouvement dans le SENS ANTI-HORAIRE de la base
 
 
+/////////////////////////////
+
+int etatFinCourse_M1 = 0;
+int etatFinCourse_M2 = 0;
+int etatFinCourse_M3 = 0;
+int etatFinCourse_M4 = 0;
+int etatFinCourse_M5 = 0;
+
+/////////////////////////////
 
 void setup() {
 
@@ -128,6 +149,17 @@ void setup() {
   pinMode(pinButton_M5_CW, INPUT_PULLUP);
   pinMode(pinButton_M5_CCW, INPUT_PULLUP);
 
+
+////////////////////////////////////////////
+  
+  pinMode(pinFinCourse_M1, INPUT_PULLUP);
+  pinMode(pinFinCourse_M2, INPUT_PULLUP);
+  pinMode(pinFinCourse_M3, INPUT_PULLUP);
+  pinMode(pinFinCourse_M4, INPUT_PULLUP);
+  pinMode(pinFinCourse_M5, INPUT_PULLUP);
+
+//////////////////////////////////////////
+
   // Arrêter le moteur au démarrage
   digitalWrite(pinInput1, LOW);
   digitalWrite(pinInput2, LOW);
@@ -164,8 +196,8 @@ void loop() {
   buttonState10_M5_CCW = digitalRead(pinButton_M5_CCW);
 
   // Si le premier bouton est enfoncé, activer le moteur à pleine vitesse dans le sens horaire
-  if (buttonState1_M1_OUVRE == LOW) {
-    analogWrite(pinEnable, 255);  // Pleine vitesse (255 correspond à 100%)
+  if (buttonState1_M1_OUVRE == LOW && etatFinCourse_M1 == HIGH) {
+    analogWrite(pinEnable, 60);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput1, LOW); // Sens horaire
     digitalWrite(pinInput2, HIGH);
   }
@@ -173,22 +205,22 @@ void loop() {
 
   // Si le deuxième bouton est enfoncé, activer le moteur à pleine vitesse dans le sens antihoraire A MODIFIERRRRR !!!!!!!!! LES LOW ET HIGH
   else if (buttonState2_M1_FERME == LOW) {
-    analogWrite(pinEnable, 255);  // Pleine vitesse (255 correspond à 100%)
+    analogWrite(pinEnable, 60);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput1, HIGH);  // Sens antihoraire
     digitalWrite(pinInput2, LOW);
   } 
 
 
   // Si le deuxième bouton est enfoncé, activer le moteur à pleine vitesse dans le sens antihoraire
-  else if (buttonState3_M2_HAUT == LOW) {
-    analogWrite(pinEnableA, 255);  // Pleine vitesse (255 correspond à 100%)
+  else if (buttonState3_M2_HAUT == LOW && etatFinCourse_M2 == HIGH) {
+    analogWrite(pinEnableA, 60);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput3, LOW);  // Sens antihoraire
     digitalWrite(pinInput4, HIGH);
   }
 
 
   else if (buttonState4_M2_BAS == LOW) {
-    analogWrite(pinEnableA, 255);  // Pleine vitesse (255 correspond à 100%)
+    analogWrite(pinEnableA, 60);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput3, HIGH);  // Sens antihoraire
     digitalWrite(pinInput4, LOW);
   }
@@ -202,7 +234,7 @@ void loop() {
   }
 
 
-  else if (buttonState6_M3_BAS == LOW) {
+  else if (buttonState6_M3_BAS == LOW && etatFinCourse_M3 == HIGH) {
     analogWrite(pinEnableB, 255);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput5, HIGH);  // Sens antihoraire
     digitalWrite(pinInput6, LOW);
@@ -211,28 +243,28 @@ void loop() {
 
   // Si le deuxième bouton est enfoncé, activer le moteur à pleine vitesse dans le sens antihoraire
   else if (buttonState7_M4_AV == LOW) {
-    analogWrite(pinEnableC, 255);  // Pleine vitesse (255 correspond à 100%)
+    analogWrite(pinEnableC, 60);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput7, LOW);  // Sens antihoraire
     digitalWrite(pinInput8, HIGH);
   }
 
 
-  else if (buttonState8_M4_AR == LOW) {
-    analogWrite(pinEnableC, 255);  // Pleine vitesse (255 correspond à 100%)
+  else if (buttonState8_M4_AR == LOW && etatFinCourse_M4 == HIGH) {
+    analogWrite(pinEnableC, 60);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput7, HIGH);  // Sens antihoraire
     digitalWrite(pinInput8, LOW);
   }
 
 // Si le deuxième bouton est enfoncé, activer le moteur à pleine vitesse dans le sens antihoraire
-  else if (buttonState9_M5_CW == LOW) {
-    analogWrite(pinEnableD, 255);  // Pleine vitesse (255 correspond à 100%)
+  else if (buttonState9_M5_CW == LOW && etatFinCourse_M5 == HIGH) {
+    analogWrite(pinEnableD, 60);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput9, HIGH);  // Sens antihoraire
     digitalWrite(pinInput10, LOW);
   }
 
 
   else if (buttonState10_M5_CCW == LOW) {
-    analogWrite(pinEnableD, 255);  // Pleine vitesse (255 correspond à 100%)
+    analogWrite(pinEnableD, 60);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput9, LOW);  // Sens antihoraire
     digitalWrite(pinInput10, HIGH);
   }
