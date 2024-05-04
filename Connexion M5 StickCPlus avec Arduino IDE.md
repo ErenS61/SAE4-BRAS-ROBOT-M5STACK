@@ -10,46 +10,46 @@
 
 # VID_0
 
-<img src="file:///C:/Users/erens/Downloads/VID0.gif" title="" alt="" data-align="center">
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID0.gif" title="" alt="" data-align="center">
 
-***
+
 
 # VID_1
 
-<img src="file:///C:/Users/erens/Downloads/VID1.gif" title="" alt="" data-align="center">
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID1.gif" title="" alt="" data-align="center">
 
-***
+
 
 # VID_2
 
-<img src="file:///C:/Users/erens/Downloads/VID2.gif" title="" alt="" data-align="center">
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID2.gif" title="" alt="" data-align="center">
 
-***
+
 
 # VID_3
 
-<img src="file:///C:/Users/erens/Downloads/VID3.gif" title="" alt="" data-align="center">
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID3.gif" title="" alt="" data-align="center">
 
-***
+
 
 # VID_4
 
-<img src="file:///C:/Users/erens/Downloads/VID4.gif" title="" alt="" data-align="center">
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID4.gif" title="" alt="" data-align="center">
 
-***
+
 
 # VID_5
 
-<img src="file:///C:/Users/erens/Downloads/VID5.gif" title="" alt="" data-align="center">
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID5.gif" title="" alt="" data-align="center">
 
-***
+
 
 # VID_6
 
-<img src="file:///C:/Users/erens/Downloads/VID6.gif" title="" alt="" data-align="center">
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID6.gif" title="" alt="" data-align="center">
 
-***
+
 
 # Hello World
 
-![](C:\Users\erens\Downloads\HELLO%20WORLD.gif)
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/HELLO%20WORLD.gif" title="" alt="" data-align="center">
