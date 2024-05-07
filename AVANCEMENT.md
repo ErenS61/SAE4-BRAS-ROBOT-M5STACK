@@ -75,7 +75,7 @@
 
 ***
 
-### 06/05/2024 (Autonomie hors d ela SAE Libres)
+### 06/05/2024 (Autonomie hors de la SAE Libres)
 
 `Ce qu'on a fait :`
 
@@ -89,4 +89,18 @@
 
 - Le bouton poussoir `CCW` du M5 ne fonctionne plus (une commande RS à été envoyé au technicien)
 
+***
 
+### 07/05/2024 (Autonomie hors de la SAE Libres)
+
+`Ce qu'on a fait :`
+
+- Ajout des capteurs de fin de course M2 et M5 dans le programme principale
+
+- Modification du bouton M5 CCW vers le bouton HOME
+
+`Les problèmes rencontrées :`
+
+- Câble du capteur de fin de course M2 débrancher par une personne ne faisant pas partie du projet (personne tierces)
+
+- Recontitution du câble à son emplacement d'origine après maintenance (dénudement du câble)
