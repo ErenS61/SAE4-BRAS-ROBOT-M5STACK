@@ -85,7 +85,7 @@
 
 `Les problèmes rencontrées :`
 
-- Le capteur de fin de course du poignet M2 ne fonctionne plus (tension à 2V en fonctionnement)
+- Le capteur de fin de course de la pince M1 ne fonctionne plus (tension à 2V en fonctionnement)
 
 - Le bouton poussoir `CCW` du M5 ne fonctionne plus (une commande RS à été envoyé au technicien)
 
@@ -104,3 +104,19 @@
 - Câble du capteur de fin de course M2 débrancher par une personne ne faisant pas partie du projet (personne tierces)
 
 - Recontitution du câble à son emplacement d'origine après maintenance (dénudement du câble)
+
+***
+
+### 14/05/2024 (SAE Libres)
+
+`Ce qu'on a fait :`
+
+- Remplacement du capteur de fin de course de la pince M1 par un nouveau
+
+- Ajout des lignes de codes dans le programme principale permettant d'utiliser le capteur de fin de course M1
+
+`Les problèmes rencontrées :`
+
+
+
+***
