@@ -115,6 +115,8 @@
 
 - Ajout des lignes de codes dans le programme principale permettant d'utiliser le capteur de fin de course M1
 
+-   Avancement sur la présentation oral de mi-parcours
+
 `Les problèmes rencontrées :`
 
 
