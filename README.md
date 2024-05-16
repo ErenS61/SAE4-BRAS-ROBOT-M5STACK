@@ -2,7 +2,7 @@
 
 # SAE Bras robotisé avec M5 StickC Plus
 
-Ceci est un projet du département GEII de l'Institut Universitaire de Technologie de Mulhouse.
+### Ceci est un projet du département GEII de l'Institut Universitaire de Technologie de Mulhouse.
 
 #### Membres de la SAE : SAHIN Eren / PRIZZI-SCHERER Benjamin / SCHMITT Thomas
 
