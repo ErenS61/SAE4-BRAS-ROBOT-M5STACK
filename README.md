@@ -4,11 +4,9 @@
 
 Ceci est un projet du département GEII de l'Institut Universitaire de Technologie de Mulhouse.
 
-###### Membres de la SAE : SAHIN Eren / PRIZZI-SCHERER Benjamin / SCHMITT Thomas
+#### Membres de la SAE : SAHIN Eren / PRIZZI-SCHERER Benjamin / SCHMITT Thomas
 
-###### Professeurs tuteur de la SAE : M. HUEBER Eric / M. MOURLLION Benjamin
-
-# 
+#### Professeurs tuteur de la SAE : M. HUEBER Eric / M. MOURLLION Benjamin
 
 ***
 
