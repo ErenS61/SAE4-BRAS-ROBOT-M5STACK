@@ -24,8 +24,8 @@ Le but de ce projet est de piloter un bras robotisé grâce à une application s
 
 ### Tableau prévisionnel
 
-![](C:\Users\erens\Downloads\Tableau%20prévisionnel%203.png)
+![](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Tableau%20pr%C3%A9visionnel%203.png)
 
-![](C:\Users\erens\Downloads\Tableau%20prévisionnel%201.png)
+![](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Tableau%20pr%C3%A9visionnel%201.png)
 
-![](C:\Users\erens\Downloads\Tableau%20prévisionnel%202.png)
+![](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Tableau%20pr%C3%A9visionnel%202.png)
