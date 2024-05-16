@@ -16,8 +16,6 @@
   - Potentiomètre
   - Caméra UnitV K210
 
-`Les problèmes rencontrées :`
-
 ***
 
 ### 11/04/2024
@@ -29,8 +27,6 @@
 - Comprehension de la mise en marche et programmation de petit code sur le M5 Stick
 - Prise en main du logiciel UIFlow
 
-`Les problèmes rencontrées :`
-
 ***
 
 ### 16/04/2024
@@ -38,9 +34,6 @@
 `Ce qu'on a fait :`
 
 - Commencer la programmation sur le logiciel Arduino IDE
-- 
-
-`Les problèmes rencontrées :`
 
 ***
 
@@ -51,10 +44,9 @@
 - Comprendre le fonctionnement des capteurs de fin de course
 - Incorporation des capteurs de fin de course dans le programme
 
-`Les problèmes rencontrées :`
+`Les problèmes rencontrés :`
 
-- L'incorporation des capteurs de fin de course dans le programme n'a pas donné le résultat attendu. <br>
-  Quand le capteur de fin de course était à l'état actif, le mouvement du coude vers l'avant ne s'arrêter pas.
+- L'incorporation des capteurs de fin de course dans le programme n'a pas donné le résultat attendu. <br>Quand le capteur de fin de course était à l'état actif, le mouvement du coude vers l'avant ne s'arrêter pas.
 
 ***
 
@@ -64,7 +56,7 @@
 
 - Essayer d'incorporer les lignes de codes des capteurs de fin de course dans le programme principale.
 
-`Les problèmes rencontrées :`
+`Les problèmes rencontrés :`
 
 - L'incorporation des capteurs de fin de course dans le programme principale ne fonctionnait pas, <br>
   c'est-à-dire que tout les boutons permettant de contrôler les moteurs fonctionnait hormis le bouton <br>
@@ -83,7 +75,7 @@
 
 - Vérification de la cohabitation de deux capteurs de fin de course dans un seul et même programme
 
-`Les problèmes rencontrées :`
+`Les problèmes rencontrés :`
 
 - Le capteur de fin de course de la pince M1 ne fonctionne plus (tension à 2V en fonctionnement)
 
@@ -99,7 +91,7 @@
 
 - Modification du bouton M5 CCW vers le bouton HOME
 
-`Les problèmes rencontrées :`
+`Les problèmes rencontrés :`
 
 - Câble du capteur de fin de course M2 débrancher par une personne ne faisant pas partie du projet (personne tierces)
 
@@ -115,10 +107,6 @@
 
 - Ajout des lignes de codes dans le programme principale permettant d'utiliser le capteur de fin de course M1
 
--   Avancement sur la présentation oral de mi-parcours
-
-`Les problèmes rencontrées :`
-
-
+- Avancement sur la présentation oral de mi-parcours
 
 ***
