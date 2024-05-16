@@ -5,21 +5,20 @@
 # SAE Bras robotisé avec M5 StickC Plus
 
 ### Auteurs de la SAE :
+
 #### SAHIN Eren / PRIZZI-SCHERER Benjamin / SCHMITT Thomas
 
 ### Professeurs tuteur de la SAE :
+
 ### M. HUEBER Eric / M. MOURLLION Benjamin
 
 ***
 
 ### Matériel à notre disposition
+
 - Bras robotisé
 - Arduino Mega 2560
 - M5 StickC Plus
-
-
-
-
 
 <!--
 > [!NOTE]
