@@ -58,12 +58,8 @@
 
 `Les problèmes rencontrés :`
 
-- L'incorporation des capteurs de fin de course dans le programme principale ne fonctionnait pas, <br>
-  c'est-à-dire que tout les boutons permettant de contrôler les moteurs fonctionnait hormis le bouton <br>
-  M3_BAS qui permet d'incliner le coude du bras robotisé vers le bas dans laquel se trouvait les modifications <br>
-  incluant le capteur de fin de course.
-- Le programme seul du capteur de fin de course du M3_BAS fonctionne quand aucun autre bouton n'est ajouté dedans, <br>
-  mais il ne fonctionne pas quans les autre boutons sont dans le programme.
+- L'incorporation des capteurs de fin de course dans le programme principale ne fonctionnait pas, <br>c'est-à-dire que tout les boutons permettant de contrôler les moteurs fonctionnait hormis le bouton <br>M3_BAS qui permet d'incliner le coude du bras robotisé vers le bas dans laquel se trouvait les modifications <br>incluant le capteur de fin de course.
+- Le programme seul du capteur de fin de course du M3_BAS fonctionne quand aucun autre bouton n'est ajouté dedans, <br>mais il ne fonctionne pas quans les autre boutons sont dans le programme.
 
 ***
 
