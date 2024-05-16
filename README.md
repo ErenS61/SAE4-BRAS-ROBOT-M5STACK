@@ -10,8 +10,22 @@
 
 ***
 
+## Contexte
+
+Le but de ce projet est de piloter un bras robotisé grâce à une application smartphone qui servira aussi de retour d'informations.
+
 ### Matériel à notre disposition
 
 - Bras robotisé
 - Arduino Mega 2560
 - M5 StickC Plus
+
+
+
+### Tableau prévisionnel
+
+![](C:\Users\erens\Downloads\Tableau%20prévisionnel%203.png)
+
+![](C:\Users\erens\Downloads\Tableau%20prévisionnel%201.png)
+
+![](C:\Users\erens\Downloads\Tableau%20prévisionnel%202.png)
