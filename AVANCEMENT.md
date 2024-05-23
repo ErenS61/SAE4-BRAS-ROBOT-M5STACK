@@ -122,3 +122,5 @@
 - Problème de connectique avec le M5 Dial
 
 - Supposition avec l'alimentation en courant du M5 Dial (6V - 36V) contre 5V pour le Arduino
+
+- COM7 marche et pas COM9 (forcer sur le gestionnaire de périphérique)
