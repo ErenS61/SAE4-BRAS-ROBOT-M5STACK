@@ -106,3 +106,19 @@
 - Avancement sur la présentation oral de mi-parcours
 
 ***
+
+### 23/05/2024 (SAE)
+
+`Ce qu'on a fait :`
+
+- Découverte du nouveau M5 Dial
+
+- Implatation du nouveau UI Flow 2
+
+- Prise en main de UI Flow 2
+
+`Les problèmes rencontrés :`
+
+- Problème de connectique avec le M5 Dial
+
+- Supposition avec l'alimentation en courant du M5 Dial (6V - 36V) contre 5V pour le Arduino
