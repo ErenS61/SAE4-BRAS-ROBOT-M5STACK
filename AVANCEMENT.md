@@ -124,3 +124,19 @@
 - Supposition avec l'alimentation en courant du M5 Dial (6V - 36V) contre 5V pour le Arduino
 
 - COM7 marche et pas COM9 (forcer sur le gestionnaire de périphérique)
+
+***
+
+### 29/05/2024 (SAE)
+
+`Ce qu'on a fait :`
+
+- Création des programmes de l'Arduino et du M5Stack Fire en incluant la communication UART afin de piloter le bras robotisé depuis le M5
+
+`Les problèmes rencontrés :`
+
+- Les deux modules ne semble pas communiquer entre eux même si leurs programmes semble correct (possible problème de traduction des valeurs envoyé dans la liasion série)
+
+- Difficulté à comprendre la logique du M5Stack Fire
+
+***
