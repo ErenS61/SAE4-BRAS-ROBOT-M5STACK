@@ -140,3 +140,15 @@
 - Difficulté à comprendre la logique du M5Stack Fire
 
 ***
+
+### 30/05/2024 (SAE Libres)
+
+`Ce qu'on a fait :`
+
+- Fixer le problèmes d'émission d'une trame de donnée depuis le M5Stack Fire
+
+`Les problèmes rencontrés :`
+
+- L'Arduino ne reçoit pas les trames de données émis depuis le M5Stack Fire (à vérifier avec un oscilloscope)
+
+***
