@@ -36,7 +36,7 @@ int etatFinCourseM5 = 0;
 /*                 VARIABLES UART                  */
 /* ----------------------------------------------- */
 
-const int baudRate = 115200; // Vitesse de transmission UART
+const int baudRate = 9600; // Vitesse de transmission UART
 
 char receivedCommand = 0; // Variable pour stocker la commande reçue
 
@@ -65,7 +65,7 @@ void setup() {
   digitalWrite(pinInput4, LOW);
 
   // Initialisation de la communication série pour UART
-  Serial.begin(115200); // Communication avec M5Stack Fire sur Serial1
+  Serial.begin(9600); // Communication avec M5Stack Fire
 }
 
 void loop() {
@@ -94,7 +94,7 @@ void loop() {
       digitalWrite(pinInput4, LOW);
     }
   }
-
+  
   // Commandes manuelles avec les boutons
   if (buttonState3_M2_HAUT == LOW && etatFinCourseM2 == HIGH) {
     analogWrite(pinEnableA, 60);  // Pleine vitesse (255 correspond à 100%)
@@ -110,4 +110,6 @@ void loop() {
     digitalWrite(pinInput3, LOW);
     digitalWrite(pinInput4, LOW);
   }
+  */
 }
+
