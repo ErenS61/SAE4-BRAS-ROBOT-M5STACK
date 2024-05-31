@@ -152,3 +152,21 @@
 - L'Arduino ne reçoit pas les trames de données émis depuis le M5Stack Fire (à vérifier avec un oscilloscope)
 
 ***
+
+### 31/05/2024 (SAE Libres)
+
+`Ce qu'on a fait :`
+
+- Commande des boutons poussoirs reçu
+
+- Changement des boutons poussoirs défaillant
+
+- Vérification de la réception d'une trame de donnée depuis l'Arduino
+
+`Les problèmes rencontrés :`
+
+- Problèmes de contact récurant sur le bouton poussoir M3 HAUT
+
+- 
+
+***
