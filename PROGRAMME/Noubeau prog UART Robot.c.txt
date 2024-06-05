@@ -1,3 +1,4 @@
+
 const int pinEnableA = 3;
 const int pinFinCourseM2 = 52;
 
@@ -30,31 +31,6 @@ void setup() {
 }
 
 void loop() {
-  // Vérifier s'il y a des données disponibles sur le port série
-  if (Serial.available() > 0) {
-    // Lire les données reçues
-    byte receivedByte = Serial.read();
-
-    // Vérifier si les données reçues sont 0x55
-    if (receivedByte == 0x55) {
-      analogWrite(pinEnableA, 60); // Définir la vitesse à 60/255
-
-      // Faire bouger le bras dans un sens
-      digitalWrite(pinInput3, LOW); // Sens antihoraire
-      digitalWrite(pinInput4, HIGH);
-
-      // Attendre jusqu'à ce que la fin de course soit atteinte
-      while (digitalRead(pinFinCourseM2) == HIGH) {
-        // Continue le mouvement
-      }
-
-      // Arrêter le moteur à la fin de course
-      analogWrite(pinEnableA, 0);
-      digitalWrite(pinInput3, LOW);
-      digitalWrite(pinInput4, LOW);
-    }
-  }
-
   // Lire l'état des boutons
   buttonState3_M2_HAUT = digitalRead(pinButton_M2_HAUT);
   buttonState4_M2_BAS = digitalRead(pinButton_M2_BAS);
@@ -73,5 +49,40 @@ void loop() {
     analogWrite(pinEnableA, 0);
     digitalWrite(pinInput3, LOW);
     digitalWrite(pinInput4, LOW);
+  }
+
+  // Vérifier s'il y a des données disponibles sur le port série
+  if (Serial.available() > 0) {
+    // Lire les données reçues
+    byte receivedByte = Serial.read();
+
+    // Exécuter les commandes basées sur les données reçues
+    if (receivedByte == 0x55) {
+      // Commande pour monter le bras
+      analogWrite(pinEnableA, 60);
+      digitalWrite(pinInput3, LOW);
+      digitalWrite(pinInput4, HIGH);
+
+      // Attendre jusqu'à ce que la fin de course soit atteinte
+      while (digitalRead(pinFinCourseM2) == HIGH) {
+        // Continue le mouvement
+        delay(10); // Petit délai pour éviter de bloquer l'UART
+      }
+
+      // Arrêter le moteur à la fin de course
+      analogWrite(pinEnableA, 0);
+      digitalWrite(pinInput3, LOW);
+      digitalWrite(pinInput4, LOW);
+    } else if (receivedByte == 0x44) {
+      // Commande pour descendre le bras
+      analogWrite(pinEnableA, 60);
+      digitalWrite(pinInput3, HIGH);
+      digitalWrite(pinInput4, LOW);
+    } else if (receivedByte == 0x33) {
+      // Commande pour arrêter le mouvement
+      analogWrite(pinEnableA, 0);
+      digitalWrite(pinInput3, LOW);
+      digitalWrite(pinInput4, LOW);
+    }
   }
 }
