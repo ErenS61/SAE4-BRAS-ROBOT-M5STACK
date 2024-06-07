@@ -170,3 +170,35 @@
 - 
 
 ***
+
+### 05/06/2024 (SAE)
+
+`Ce qu'on a fait :`
+
+- Préparation du programme pour le mode initial
+
+- Changement de protocole de communication de l'UART vers L'I2C
+
+`Les problèmes rencontrés :`
+
+- Toujours pas d'exécution de programme avec le protocol UART malgrés la réception de données de l'Arduino visualiser sur un oscilloscope
+
+- Le protocole I2C semble présenter les mêmes problèmes que l'UART
+
+***
+
+### 07/06/2024 (SAE Libres)
+
+`Ce qu'on a fait :`
+
+- Recherche de possibilité de contré l'intertie des moteurs par logiciel
+
+- Essaie de la même chose avec un PID
+
+- Essaie de la communication UART en utilisant les PIN GPIO
+
+`Les problèmes rencontrés :`
+
+- La contre innertie des moteurs par logiciel ne semble par fonctionner
+
+- Les PID fonctionne principalement en langage Python et non en C
