@@ -202,3 +202,21 @@
 - La contre innertie des moteurs par logiciel ne semble par fonctionner
 
 - Les PID fonctionne principalement en langage Python et non en C
+
+***
+
+### 11/06/2024 (SAE)
+
+`Ce qu'on a fait :`
+
+- Essayer de nouvelle manière de connecter le M5 à l'Arduino en UART
+
+- Faire des recherche sur le codage Bluetooth
+
+`Les problèmes rencontrés :`
+
+- Arrivé toujours pas à réaliser la liaison entre les deux appareils
+
+- Le M5 envoie des données mais l'Arduino ne semble toujours pas les recevoir
+
+- 
