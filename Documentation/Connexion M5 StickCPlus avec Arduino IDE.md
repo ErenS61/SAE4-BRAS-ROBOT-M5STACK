@@ -84,7 +84,7 @@ Si aucun port COM n'est détecter, débrancher le câble et rebrancher le puis r
 
 <img title="" src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID3.gif" alt="" data-align="center">
 
-Dans la rubrique Outils, sélectionner `Carte` > `esp32`.
+Dans la rubrique `Outils`, sélectionner `Carte` > `esp32`.
 
 Dans la liste déroulante, sélectionner `M5Stick-C`. Une fois avoir choisi la carte, la mention `M5Stick-C` apparaît en-dessous de la rubrique Outils ainsi que le port COM qui lui est assigné. S'il n'y a rien, choisissez la carte et le port COM manuellement en cliquant sur le bouton `Sélectionner une autre carte et un port...`.
 
