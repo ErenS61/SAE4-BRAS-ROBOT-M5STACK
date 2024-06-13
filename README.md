@@ -58,3 +58,55 @@ M4 controle le moteur de l'épaule il peut bouger en avant et en arriere (AV=Mon
 M5 controle le moteur de la base du bras tourant en sens horaire et antihoraire (CW=sens horaire / CCW= sens anti-horaire)
 
 il y a aussi un bouton permettant d'allumer et eteindre la lampe en bout de la pince
+
+un bouton "Home" servant a remmetre le bras dans une potion initiale (en cour)
+
+un bouton on/off est aussi présent
+
+
+
+Si 2 boutons agisant sur un même moteur sont presser seul l'un d'entre sera pris en compte
+
+ Chaque moteur possede un capteur fin de course empechant au bras de continuer et de s'endommager il sont situer pour bloquer:
+
+M1: l'ouverture de la pince
+
+M2: la montée du poignet (haut)
+
+M3: la descente du coude (bas)
+
+M4: le mouvement arrière de l'épaule (AR)
+
+M5: le mouvement horaire de la base (CW)
+
+
+
+(partie concernant le 5 stack(I2C,uart etc)
+
+comment ca marche
+
+ce qu'on a essayer
+
+pourquoi ca a pas marcher
+
+des piste de solution a chaque probleme
+
+ce qu'on a choisit comme résolution
+
+
+
+partie concernant appinventor
+
+rapidement comment ca marche
+
+ce qu'on a fait
+
+
+
+partie concernant le bluetooth
+
+comment ca marche
+
+ce qui marche pas
+
+ce qu'on a fait
