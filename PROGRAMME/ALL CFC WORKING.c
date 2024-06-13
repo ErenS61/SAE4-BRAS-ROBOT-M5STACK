@@ -28,7 +28,7 @@ const int pinButton_M3_BAS = 42 ;       // Bouton pour le mouvement BAS du coude
 const int pinButton_M4_AV = 43 ;        // Bouton pour le mouvement AVANT de l'épaule sur le PIN 43 de l'Arduino
 const int pinButton_M4_AR = 44 ;        // Bouton pour le mouvement ARRIÈRE de l'épaule sur le PIN 44 de l'Arduino
 const int pinButton_M5_CW = 45 ;        // Bouton pour le mouvement SENS HORAIRE de la base sur le PIN 45 de l'Arduino
-const int pinButton_M5_CCW = 48 ;       // Bouton pour le mouvement SENS ANTI-HORAIRE de la base sur le PIN 46 de l'Arduino
+const int pinButton_M5_CCW = 46 ;       // Bouton pour le mouvement SENS ANTI-HORAIRE de la base sur le PIN 46 de l'Arduino
 // CHANGEMENT DU NUMERO DU PIN POUR M5 CCW VERS "HOME"
 // NUMERO PIN M5 CCW RÉEL = 46
 // NUMERO PIN M5 CCW PROVISOIRE = 48
