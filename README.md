@@ -29,55 +29,55 @@ Le but de ce projet est de piloter un bras robotisé grâce à une application s
 
 ***
 
-(titre) étapes du projet:
+### Étapes du projet :
 
-- création d'un mode manuel utilisant des boutons pour chaqu'un des 5 moteurs
+- Création d'un mode manuel utilisant des boutons pour chacun des 5 moteurs
 
-- apprendre a utiliser le m5 stick c+ (qui fut abandonner pour le 5 stack fire)
+- Apprendre a utiliser le m5 stick c+ (qui fut abandonner pour le M5 Stack Fire)
 
-- chercher a utiliser la connexion uart du stick C+ puis du stack fire avec l'arduino (en cour)
+- Chercher a utiliser la connexion uart du stick C+ puis du stack fire avec l'arduino (en cours)
 
-- utiliser MIT AppInventor pour créer une application simple devant controler le bras robot (en cour)
+- Utiliser MIT AppInventor pour créer une application simple devant controler le bras robot (en cours)
 
-- trouver comment connecter en bluetooth l'application et le 5 stack fire (en cour)
+- Trouver comment connecter en Bluetooth l'application et le M5 Stack Fire (en cours)
 
-
-
-(titre) utilisation mode manu:
+### Utilisation mode manuel :
 
 (image des boutons)
 
-M1 controle le moteur de la pince l'ouvrant et la fermant
+- M1 controle le moteur de la pince l'ouvrant et la fermant
 
-M2 controle le moteur du poignet lui permettant de monter ou de descendre (haut=monter / bas=descendre)
+- M2 controle le moteur du poignet lui permettant de monter ou de descendre (haut=monter / bas=descendre)
 
-M3 controle le moteur du coude lui permetant de monter et descendre (haut=monter / bas=descendre)
+- M3 controle le moteur du coude lui permetant de monter et descendre (haut=monter / bas=descendre)
 
-M4 controle le moteur de l'épaule il peut bouger en avant et en arriere (AV=Monter / AR=Arriere)
+- M4 controle le moteur de l'épaule il peut bouger en avant et en arriere (AV=Monter / AR=Arriere)
 
-M5 controle le moteur de la base du bras tourant en sens horaire et antihoraire (CW=sens horaire / CCW= sens anti-horaire)
+- M5 controle le moteur de la base du bras tourant en sens horaire et antihoraire (CW=sens horaire / CCW= sens anti-horaire)
 
-il y a aussi un bouton permettant d'allumer et eteindre la lampe en bout de la pince
+***
 
-un bouton "Home" servant a remmetre le bras dans une potion initiale (en cour)
+Il y a aussi un bouton permettant d'allumer et eteindre la lampe en bout de la pince
 
-un bouton on/off est aussi présent
+Un bouton "Home" servant a remmetre le bras dans une potion initiale (en cours)
 
-
+Un bouton on/off est aussi présent
 
 Si 2 boutons agisant sur un même moteur sont presser seul l'un d'entre sera pris en compte
 
- Chaque moteur possede un capteur fin de course empechant au bras de continuer et de s'endommager il sont situer pour bloquer:
+Chaque moteur possède un capteur de fin de course empêchant au bras de continuer et de s'endommager. Il sont situer pour bloquer :
 
-M1: l'ouverture de la pince
+- M1: l'ouverture de la pince
 
-M2: la montée du poignet (haut)
+- M2: la montée du poignet (haut)
 
-M3: la descente du coude (bas)
+- M3: la descente du coude (bas)
 
-M4: le mouvement arrière de l'épaule (AR)
+- M4: le mouvement arrière de l'épaule (AR)
 
-M5: le mouvement horaire de la base (CW)
+- M5: le mouvement horaire de la base (CW)
+
+
 
 
 
@@ -93,15 +93,11 @@ des piste de solution a chaque probleme
 
 ce qu'on a choisit comme résolution
 
-
-
 partie concernant appinventor
 
 rapidement comment ca marche
 
 ce qu'on a fait
-
-
 
 partie concernant le bluetooth
 
