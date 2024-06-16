@@ -43,7 +43,7 @@ Le but de ce projet est de piloter un bras robotisé grâce à une application s
 
 ### Utilisation mode manuel :
 
-(image des boutons)
+<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Bouton%20robot.jpeg ">
 
 - M1 controle le moteur de la pince l'ouvrant et la fermant
 
