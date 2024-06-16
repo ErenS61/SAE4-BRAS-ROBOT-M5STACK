@@ -54,7 +54,7 @@ L'installation du gestionnaire de carte peut prendre du temps.
 
 <img title="" src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID2.gif" alt="" data-align="center">
 
-Dans la barre d'outils verticale, en haut à gauche de la page, cliquer sur le bouton de gestionnaire de bibliothèque <img title="" src="file:///C:/Users/erens/Downloads/CAP5.png" alt="" width="50">  et taper dans la zone de recherche `M5StickCPlus`, puis installer la bibliothèque `M5StickCPlus par M5Stack` dans la version **0.1.0**.
+Dans la barre d'outils verticale, en haut à gauche de la page, cliquer sur le bouton de gestionnaire de bibliothèque <img title="" src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/CAP5.png" alt="" width="50">  et taper dans la zone de recherche `M5StickCPlus`, puis installer la bibliothèque `M5StickCPlus par M5Stack` dans la version **0.1.0**.
 
 Une page va s'afficher, appuyer sur le bouton `Install All`.
 
@@ -84,7 +84,7 @@ Si aucun port COM n'est détecter, débrancher le câble et rebrancher le puis r
 
 <img title="" src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/VID3.gif" alt="" data-align="center">
 
-Dans la rubrique Outils, sélectionner `Carte` > `esp32`.
+Dans la rubrique `Outils`, sélectionner `Carte` > `esp32`.
 
 Dans la liste déroulante, sélectionner `M5Stick-C`. Une fois avoir choisi la carte, la mention `M5Stick-C` apparaît en-dessous de la rubrique Outils ainsi que le port COM qui lui est assigné. S'il n'y a rien, choisissez la carte et le port COM manuellement en cliquant sur le bouton `Sélectionner une autre carte et un port...`.
 
