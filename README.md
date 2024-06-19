@@ -103,7 +103,7 @@ ce qu'on a fait (image et description de l'apli)
 
 ### partie concernant le bluetooth(a vérifier)
 
-comment ca marche
+comment ca marche pas
 
 ce qui marche pas
 
