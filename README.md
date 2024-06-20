@@ -118,8 +118,6 @@ L'application devra répondre aux éxigences suivants :
 
 ### partie concernant le bluetooth(a vérifier)
 
-comment ca marche
+En ce qui concerne la communication bluetooth nous n'avons pas put pas faire d'essaie simplement car nous avont préféré nous concentrer sur faire marché le stack fire avec l'arduino
 
-ce qui marche pas
-
-ce qu'on a fait
+(peut être mettre un lien vidéo vers la vidéo qui présente comment faire marcher le stack en bluetooth)
