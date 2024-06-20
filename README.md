@@ -77,7 +77,7 @@ Chaque moteur possède un capteur de fin de course empêchant au bras de continu
 
 - M5: le mouvement horaire de la base (CW)
 
-### Utilisation du M5 stack(I2C,uart etc)
+### Utilisation du M5 Stack Fire (UART, I2C etc)
 
 #### (comment ça marche, à développer si possible)
 
@@ -95,9 +95,25 @@ Cependant sur le M5 stacks fire nous avons rencontré un problème de communicat
 
 ### partie concernant appinventor (voir avec ben)
 
-rapidement comment ca marche
+Une prototype visuelle d'application a été réaliser lors de la SAE grâce au logiciel en ligne MIT App Inventor.
 
-ce qu'on a fait (image et description de l'apli)
+
+
+L'application devra répondre aux éxigences suivants :
+
+- Afficher une page d'accueil
+
+- Pouvoir se connecter en Bluetooth au M5 Stack Fire grâce à un bouton `Connexion`
+
+- Afficher les différents moteurs (M1 à M5)
+
+- Lors d'un appuie sur l'un des boutons d'un moteur, il devra afficher des flèches directionnel
+
+- Afficher un bouton `Retour` afin de revenir sur la page d'accueil
+
+
+
+
 
 ***
 
