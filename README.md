@@ -117,10 +117,6 @@ L'application devra répondre aux éxigences suivants :
 
 Le projet comporte une partie fonctionnant avec le réseau Bluetooth d'un smartphone apparairé au M5 Stack Fire faisant office de commande à distance avec l'application smartphone. Le développement du projet ayant pris du retard, la partie réseau Bluetooth n'a pas pu être abordé.
 
-Néanmoins, nous joingons ci-joint un lien vidéo vers un tutoriel sur l'utilisation du réseau Bluetooth sur le M5 Stack Fire :
+Néanmoins, nous joignons ci-joint un lien vidéo vers un tutoriel sur l'utilisation du réseau Bluetooth sur le M5 Stack Fire :
 
-[Vidéo](https://youtu.be/E495XIsM1PI?si=JN3kD0oYo0OMLb5L)
-
-En ce qui concerne la communication bluetooth nous n'avons pas put pas faire d'essaie simplement car nous avont préféré nous concentrer sur faire marché le stack fire avec l'arduino
-
-(peut être mettre un lien vidéo vers la vidéo qui présente comment faire marcher le stack en bluetooth)
+https://youtu.be/E495XIsM1PI?si=JN3kD0oYo0OMLb5L
