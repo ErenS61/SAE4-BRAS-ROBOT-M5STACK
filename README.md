@@ -18,7 +18,7 @@ Le but de ce projet est de piloter un bras robotisé grâce à un controleur M5 
 - Arduino Mega 2560
 - M5 stack Fire
 
-### Tableau prévisionnel (remmetre a jour le gant et l'image ici)
+### Planning prévisionnel
 
 ![](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Mindview%203.png)
 
