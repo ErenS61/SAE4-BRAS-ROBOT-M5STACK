@@ -120,3 +120,23 @@ Le projet comporte une partie fonctionnant avec le réseau Bluetooth d'un smartp
 Néanmoins, nous joignons ci-joint un lien vidéo vers un tutoriel sur l'utilisation du réseau Bluetooth sur le M5 Stack Fire :
 
 https://youtu.be/E495XIsM1PI?si=JN3kD0oYo0OMLb5L
+
+
+
+***
+
+### Passage du M5 Stick C Plus au M5 Stack Dial puis au M5 Stack Fire
+
+Lors du commencement du projet, nous avions à notre disposition un M5 Stick C Plus. Un affichage de différents données était envisager sur le M5 Stick C Plus ainsi que le pilotage depuis cette appareil. Le M5 Stick C Plus étant trop petit, et les boutons étant difficile à utiliser, nous avons dû changer pour un autre mdèle de la même marque.
+
+
+
+Nous somme ensuite passer au M5 Stack Dial. Le Dial, avec ça forme cylindrique, était le dernier modèle sortie de la marque M5. Elle embarquait avec elle un lecteur de carte RFID, un petit écran tactile de 1,28", diverses interfaces périphériques telles que SPI, I2C, UART, ADC, etc. Sur le papier, il avait tout pour être utiliser mais le problème était au niveau de la prise en main. En effet, le M5 Stack Dial étant trop récent, il n'y avait pas de programme pré-existant qui pouvait être réutiliser, ce qui posait problème. De plus, le M5 Stack Dial n'était pas adapté à notre projet.
+
+
+
+À la fin, nous sommes passer au M5 Stack Fire. Le Fire, avec ça forme cubique, son écran assez grand ainsi que les boutons facile à manipuler, était le choix idéal pour notre projet. Elle embarquait également une carte Wi-Fi, un réseau Bluetooth, des périphériques GPIO, UART, I2C ce qui allait nous être utile.
+
+
+
+***
