@@ -131,3 +131,10 @@ Nous somme ensuite passer au M5 Stack Dial. Le Dial, avec ça forme cylindrique,
 À la fin, nous sommes passer au M5 Stack Fire. Le Fire, avec ça forme cubique, son écran assez grand ainsi que les boutons facile à manipuler, était le choix idéal pour notre projet. Elle embarquait également une carte Wi-Fi, un réseau Bluetooth, des périphériques GPIO, UART, I2C ce qui allait nous être utile.
 
 ***
+
+### capteur fin de course
+
+***
+
+### commande de contre-inertie
+***
