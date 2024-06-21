@@ -137,4 +137,9 @@ Nous somme ensuite passer au M5 Stack Dial. Le Dial, avec ça forme cylindrique,
 ***
 
 ### commande de contre-inertie
+
+***
+
+### vidéo de fonctionnement
+
 ***
