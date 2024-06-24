@@ -134,6 +134,8 @@ Nous somme ensuite passer au M5 Stack Dial. Le Dial, avec ça forme cylindrique,
 
 ### capteur fin de course
 
+Les capteurs de fin de course ont constitué une étape essentiel lors de cette SAE, en effet, comme leurs noms l'indique ils sont placé en fin de course, c'est-à-dire en bout de parcours de notre bras robot. Chacun des moteurs du bras robot possédait un capteurs de fin de course. Leurs but était de stoper le mouvement d'un des moteurs afin que le moteurs ne force pas sur les pièces du bras et donc n'endommage pas le bras robot. Le principe de codage était très simple,
+
 ***
 
 ### commande de contre-inertie
