@@ -76,17 +76,19 @@ Chaque moteur possède un capteur de fin de course empêchant au bras de continu
 
 - M5: le mouvement horaire de la base (CW)
 
+***
+
 ### Utilisation du M5 Stack Fire (UART, I2C etc)
 
-#### (comment ça marche, à développer si possible)
+## Comment ça marche ?
 
 Pour manipuler l'arduino sans utiliser les boutons nous avons dû apprendre à utiliser et programmer sur M5 stack, nous avont utiliser pour cette saé un M5 stcik c+ au début avant de passer a un M5 stack fire.
 
-#### (ce qu'on a essayé)
+## Ce qu'on a essayé
 
 Dans un premier temps nous avons commencé à programmer sur un M5 sticks C + pour nous familiariser avec l'interface, nous avons décidé d'utiliser une communication UART entre le M5 stacks et l'arduino, que ce soit sur le stick c sur le stack fire, car nous pensions que cette forme de communication était la plus pratique et facile à programmer, l'idée devait être simple, on envoie un signal par le port/fils de transmission vers le port récepteur de l'arduino et on renvoyait un signal depuis un port de transmission de l'arduino vers le port/fils de transmission vers le port récepteur de l'arduino et on renvoyait un signal depuis un port de transmission de l'arduino vers le port de réception du M5 stacks (développer au besoin)
 
-#### (pourquoi ça n'a pas marché)
+## Pourquoi ça n'a pas marché ?
 
 Cependant sur le M5 stacks fire nous avons rencontré un problème de communication entre l'arduino et le M5 stacks que nous avons pensés venu d'une particularité de conception venant du stack causant une grande perplexité pour nous, selon plusieurs forums parlant de M5 stack et de problème de communication, parle des ports 16 et 17 de ce dernier censé servir à l'UART mais qui est utilisé en interne du stack pour l'utilisation de RAM supplémentaire, nous avons donc pensé que nos problèmes de communication entre arduino et M5 stacks venaient de défaut de ces ports, mais après vérification grace à un oscilloscope nous avons constaté que le M5 stacks envoyait bien un signal vers l'arduino, l'explication la plus probable serait selon nous un problème  au niveau de l'arduino, soit de programmation, l'arduino ne comprend pas ce qu'elle reçoit et donc n'applique pas les ligné de code prévue, mais il est aussi possible que le port de réception ne fonctionne pas tout simplement, nous avons donc essayé de changer de port pour le signal pour avoir le même résultat, les lignes de code ne s'exécutent pas, nous en avons conclu que le problème doit venir de la programmation, mais nous n'avons pas encore trouvé comment régler ce problème à ce jour.
 
