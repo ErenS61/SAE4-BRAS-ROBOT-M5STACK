@@ -132,16 +132,16 @@ Nous somme ensuite passer au M5 Stack Dial. Le Dial, avec ça forme cylindrique,
 
 ***
 
-### capteur fin de course
+### Capteur fin de course
 
 Les capteurs de fin de course ont constitué une étape essentiel lors de cette SAE, en effet, comme leurs noms l'indique ils sont placé en fin de course, c'est-à-dire en bout de parcours de notre bras robot. Chacun des moteurs du bras robot possédait un capteurs de fin de course. Leurs but était de stoper le mouvement d'un des moteurs afin que le moteurs ne force pas sur les pièces du bras et donc n'endommage pas le bras robot. Le principe de codage était très simple, Tant que le capteur est inactif, le moteur conitue son chemin, dès lors que le capteur est actif le moteur s'arrête. Tant que le capteur est actif, le moteur ne pourra plus effectuer de rotation vers le capteur, le seul moyen est de simplement faire donctionner le moteur dans l'autre sens afin de déploquer le capteur. Grâce à cela nous avons pu mettre en place un programme de "position initial". Nous avons juste définit cette position à l'aide des capteurs de fin de course en décidant de tous les activer dans un ordre spécifique afin que le bras ne frotte pas contre le sol. Le seul problème restant, c'est que même si le moteur s'arrête au contacte du capteur, il restera tout de même une inertie que le moteur ne peut pas arrêter tout seul. Nous verrons dans le paragraphe suivant comment cela a été contré.
 
 ***
 
-### commande de contre-inertie
+### Commande de contre-inertie
 
 ***
 
-### vidéo de fonctionnement
+### Vidéo de fonctionnement
 
 ***
