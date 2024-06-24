@@ -146,7 +146,7 @@ Pour contrer l'inertie que nos moteurs avaient lorsque le boutons d'activation n
 
 - La seconde était de créer un programme qui lorsque le boutons est relaché, pendant un court temps on envoie un signal de tension négatif afin de compenser cette fameuse inertie qui nous enlève énormément de précision lors de manipulation et qui pourrait endommager les moteurs. 
 
-- Et la troisième qui était d'étudier les ponts en H à notre disposition afin d'effectuer la même manipulation que la seconde solution mais non directement via programme.Le principe d'utilisation est de causer un court-circuit volontaire au niveau des bornes du moteur et donc le faire freiner. Cette manipulation fonctionne sur les deux pins d'un même moteur (par exemple: In1A et In2A), le pont en H utilise un 1298n qui a deux pont en H en lui.
+- Et la troisième qui était d'étudier les ponts en H à notre disposition afin d'effectuer la même manipulation que la seconde solution mais non directement via programme.Le principe d'utilisation est de causer un court-circuit volontaire au niveau des bornes du moteur et donc le faire freiner. Cette manipulation fonctionne sur les deux pins d'un même moteur (par exemple: In1A et In2A), le pont en H utilise un L298n qui a deux pont en H en lui.
 
 Nous n'avons hélas pensé bien trop tard à la troisième solution mais c'est probablement celle qui marcherais le mieux dans le cadre de cette SAE et ce qui serais le plus simple
 
