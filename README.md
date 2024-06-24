@@ -154,6 +154,6 @@ Nous n'avons hélas pensé bien trop tard à la troisième solution mais c'est p
 
 ### Vidéo de fonctionnement
 
-Vous trouverez une vidéo de fonctionnement du bras robotisé avec les capteurs de fin de course via lien URL suivant : [2024-06-13 17-11-58.mov - pCloud](https://e.pcloud.link/publink/show?code=XZC2WTZM2XJ8fAjkUpYA8yUIihxYz4K05H7)
+Vous trouverez une vidéo de fonctionnement du bras robotisé avec les capteurs de fin de course en cliquant sur le lien suivant : [2024-06-13 17-11-58.mov - pCloud](https://e.pcloud.link/publink/show?code=XZC2WTZM2XJ8fAjkUpYA8yUIihxYz4K05H7)
 
 ***
