@@ -140,7 +140,7 @@ Les capteurs de fin de course ont constitué une étape essentiel lors de cette 
 
 ### Commande de contre-inertie
 
-//A vérifier (et embellir grammaticalement) La contre inertie constituerai a envoyer au pont en H sur les 2 pin d'un même moteur (exemple in1A et IN2A) un courant, sela causera un court circuit volontaire au niveau des borne du moteur et le fera freiner.
+//A vérifier (et embellir grammaticalement) La contre inertie constituerai a envoyer au pont en H (le pont en h utilise des l298n qui a 2 pont en h) sur les 2 pin d'un même moteur (exemple in1A et IN2A) un courant, sela causera un court circuit volontaire au niveau des borne du moteur et le fera freiner.
 
 Pour contrer l'inertie que nos moteurs avaient lorsque le boutons d'activation n'était plus actif ou encore quand un capteur était actif, nous avions pensé à plusieurs solutions:
 
