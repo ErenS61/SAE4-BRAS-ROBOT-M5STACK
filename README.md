@@ -144,11 +144,11 @@ Les capteurs de fin de course ont constitué une étape essentiel lors de cette 
 
 Pour contrer l'inertie que nos moteurs avaient lorsque le boutons d'activation n'était plus actif ou encore quand un capteur était actif, nous avions pensé à plusieurs solutions:
 
--La première était de remplacer nos moteurs par des servo-moteurs, mais il aurait fallu changer toute la structure du robot et ce n'était pas ce que nous recherchions dans le projet.
+- La première était de remplacer nos moteurs par des servo-moteurs, mais il aurait fallu changer toute la structure du robot et ce n'était pas ce que nous recherchions dans le projet.
 
--La seconde était de créer un programme qui lorsque le boutons est relaché, pendant un court temps on envoie un signal de tension négatif afin de compenser cette fameuse inertie qui nous enlève énormément de précision lors de manipulation et qui pourrait endommager les moteurs. 
+- La seconde était de créer un programme qui lorsque le boutons est relaché, pendant un court temps on envoie un signal de tension négatif afin de compenser cette fameuse inertie qui nous enlève énormément de précision lors de manipulation et qui pourrait endommager les moteurs. 
 
--Et la troisième qui était d'étudier les ponts en H à notre disposition afin d'effectuer la même manipulation que la seconde solution mais non directement via programme.
+- Et la troisième qui était d'étudier les ponts en H à notre disposition afin d'effectuer la même manipulation que la seconde solution mais non directement via programme.
 
 Nous n'avons hélas pensé bien trop tard à la troisième solution mais c'est probablement celle qui marcherais le mieux dans le cadre de cette SAE et ce qui serais le plus simple
 
