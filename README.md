@@ -10,7 +10,7 @@
 
 # Sommaire
 
-1. [Présentation du projet](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#contexte)
+1. [Présentation du projet](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#pr%C3%A9sentation-du-projet)
 
 2. [Matériel à notre disposition](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#mat%C3%A9riel-%C3%A0-notre-disposition)
 
