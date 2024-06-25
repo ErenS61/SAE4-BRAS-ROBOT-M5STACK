@@ -11,6 +11,11 @@
 # Sommaire
 
 1. [Contexte](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#contexte)
+2. [Matériel à notre disposition](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#mat%C3%A9riel-%C3%A0-notre-disposition)
+3. [Planning prévisionnel](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#planning-pr%C3%A9visionnel)
+4. [Étapes du projet](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#%C3%A9tapes-du-projet-)
+ 
+
 
 # Contexte
 
@@ -20,7 +25,7 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 
 - Bras robotisé
 - Arduino Mega 2560
-- M5 stack Fire
+- M5 Stack Fire
 
 # Planning prévisionnel
 
@@ -35,7 +40,7 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 
 ***
 
-### Étapes du projet :
+# Étapes du projet :
 
 - Création d'un mode manuel utilisant des boutons pour chacun des 5 moteurs
 
@@ -61,7 +66,6 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 
 - M5 contrôle le moteur de la base du bras tourant en sens horaire et antihoraire (CW = sens horaire / CCW = sens anti-horaire)
 
-***
 
 Il y a aussi un bouton permettant d'allumer et d'éteindre la lampe en bout de la pince
 
@@ -75,23 +79,23 @@ Chaque moteur possède un capteur de fin de course empêchant au bras de continu
 
 Il sont situer pour bloquer :
 
-- M1: l'ouverture de la pince
+- M1 : l'ouverture de la pince
 
-- M2: la montée du poignet (haut)
+- M2 : la montée du poignet (haut)
 
-- M3: la descente du coude (bas)
+- M3 : la descente du coude (bas)
 
-- M4: le mouvement arrière de l'épaule (AR)
+- M4 : le mouvement arrière de l'épaule (AR)
 
-- M5: le mouvement horaire de la base (CW)
+- M5 : le mouvement horaire de la base (CW)
 
 ***
 
-### Utilisation du M5 Stack Fire (UART, I2C etc)
+# Utilisation du M5 Stack Fire (UART, I2C etc)
 
 ## Comment ça marche ?
 
-Pour manipuler l'arduino sans utiliser les boutons nous avons dû apprendre à utiliser et programmer sur M5 stack, nous avont utiliser pour cette saé un M5 stcik c+ au début avant de passer a un M5 stack fire.
+Pour manipuler l'Arduino Mega 2560 sans utiliser les boutons, nous avons dû apprendre à utiliser et programmer sur M5 Stack, nous avont utiliser pour ce projet un M5 Stick C Plus au début avant de passer au M5 Stack Fire.
 
 ## Ce qu'on a essayé
 
@@ -99,7 +103,7 @@ Dans un premier temps nous avons commencé à programmer sur un M5 sticks C + po
 
 ## Pourquoi ça n'a pas marché ?
 
-Cependant sur le M5 stacks fire nous avons rencontré un problème de communication entre l'arduino et le M5 stacks que nous avons pensés venu d'une particularité de conception venant du stack causant une grande perplexité pour nous, selon plusieurs forums parlant de M5 stack et de problème de communication, parle des ports 16 et 17 de ce dernier censé servir à l'UART mais qui est utilisé en interne du stack pour l'utilisation de RAM supplémentaire, nous avons donc pensé que nos problèmes de communication entre arduino et M5 stacks venaient de défaut de ces ports, mais après vérification grace à un oscilloscope nous avons constaté que le M5 stacks envoyait bien un signal vers l'arduino, l'explication la plus probable serait selon nous un problème  au niveau de l'arduino, soit de programmation, l'arduino ne comprend pas ce qu'elle reçoit et donc n'applique pas les ligné de code prévue, mais il est aussi possible que le port de réception ne fonctionne pas tout simplement, nous avons donc essayé de changer de port pour le signal pour avoir le même résultat, les lignes de code ne s'exécutent pas, nous en avons conclu que le problème doit venir de la programmation, mais nous n'avons pas encore trouvé comment régler ce problème à ce jour.
+Cependant sur le M5 Stacks Fire nous avons rencontré un problème de communication entre l'arduino et le M5 stacks que nous avons pensés venu d'une particularité de conception venant du stack causant une grande perplexité pour nous, selon plusieurs forums parlant de M5 stack et de problème de communication, parle des ports 16 et 17 de ce dernier censé servir à l'UART mais qui est utilisé en interne du stack pour l'utilisation de RAM supplémentaire, nous avons donc pensé que nos problèmes de communication entre arduino et M5 stacks venaient de défaut de ces ports, mais après vérification grace à un oscilloscope nous avons constaté que le M5 stacks envoyait bien un signal vers l'arduino, l'explication la plus probable serait selon nous un problème  au niveau de l'arduino, soit de programmation, l'arduino ne comprend pas ce qu'elle reçoit et donc n'applique pas les ligné de code prévue, mais il est aussi possible que le port de réception ne fonctionne pas tout simplement, nous avons donc essayé de changer de port pour le signal pour avoir le même résultat, les lignes de code ne s'exécutent pas, nous en avons conclu que le problème doit venir de la programmation, mais nous n'avons pas encore trouvé comment régler ce problème à ce jour.
 
 ***
 
