@@ -11,7 +11,7 @@
 # Sommaire
 
 1. [Contexte](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#contexte)
-2. [Matériel à notre disposition](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#mat%C3%A9riel-%C3%A0-notre-disposition)
+2. [Matériel à notre disposition](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#mat%C3%A9riel-%C3%A0-notre-disposition)
 3. [Planning prévisionnel](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#planning-pr%C3%A9visionnel)
 4. [Étapes du projet](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#%C3%A9tapes-du-projet-)
    1. [Utilisation du mode manuel](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#utilisation-du-mode-manuel-)
