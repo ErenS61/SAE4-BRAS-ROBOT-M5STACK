@@ -12,11 +12,11 @@
 
 1. [Contexte](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#contexte)
 
-## Contexte
+# Contexte
 
 Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 Stack Fire et potentiellement avec une application smartphone qui servira aussi de retour d'informations.
 
-### Matériel à notre disposition
+# Matériel à notre disposition
 
 - Bras robotisé
 - Arduino Mega 2560
@@ -39,9 +39,9 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 
 - Création d'un mode manuel utilisant des boutons pour chacun des 5 moteurs
 
-- Apprendre a utiliser le m5 stick c+ (qui fut abandonner pour le M5 Stack Fire)
+- Apprendre a utiliser le M5 Stick C Plus (qui fut abandonner pour le M5 Stack Fire)
 
-- Chercher a utiliser la connexion UART du stick C+ puis du stack fire avec l'arduino
+- Chercher a utiliser la connexion UART du M5 Stick C Plus puis du M5 Stack Fire avec l'Arduino Mega 2560
 
 - Utiliser MIT AppInventor pour créer une application simple devant controler le bras robot 
 
@@ -51,23 +51,23 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Bouton%20robot.jpeg" width="700">
 
-- M1 controle le moteur de la pince l'ouvrant et la fermant
+- M1 contrôle le moteur de la pince l'ouvrant et la fermant
 
-- M2 controle le moteur du poignet lui permettant de monter ou de descendre (haut=monter / bas=descendre)
+- M2 contrôle le moteur du poignet lui permettant de monter ou de descendre (haut = monter / bas = descendre)
 
-- M3 controle le moteur du coude lui permetant de monter et descendre (haut=monter / bas=descendre)
+- M3 contrôle le moteur du coude lui permettant de monter et descendre (haut = monter / bas = descendre)
 
-- M4 controle le moteur de l'épaule il peut bouger en avant et en arriere (AV=Monter / AR=Arriere)
+- M4 contrôle le moteur de l'épaule il peut bouger en avant et en arriere (AV = Monter / AR = Arrière)
 
-- M5 controle le moteur de la base du bras tourant en sens horaire et antihoraire (CW=sens horaire / CCW= sens anti-horaire)
+- M5 contrôle le moteur de la base du bras tourant en sens horaire et antihoraire (CW = sens horaire / CCW = sens anti-horaire)
 
 ***
 
-Il y a aussi un bouton permettant d'allumer et eteindre la lampe en bout de la pince
+Il y a aussi un bouton permettant d'allumer et d'éteindre la lampe en bout de la pince
 
 Un bouton "Home" servant a remmetre le bras dans une potion initiale (en cours)
 
-Un bouton on/off est aussi présent
+Un bouton ON/OFF est aussi présent
 
 Si 2 boutons agisant sur un même moteur sont presser seul l'un d'entre sera pris en compte
 
