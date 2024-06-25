@@ -18,7 +18,7 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 - Arduino Mega 2560
 - M5 stack Fire
 
-### Planning prévisionnel
+# Planning prévisionnel
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Mindview%203.png" width="800">
 
