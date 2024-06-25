@@ -8,6 +8,10 @@
 
 ##### Professeurs tuteur de la SAE : M. HUEBER Eric / M. MOURLLION Benjamin
 
+# Sommaire
+
+1. [Contexte](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#contexte)
+
 ## Contexte
 
 Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 Stack Fire et potentiellement avec une application smartphone qui servira aussi de retour d'informations.
