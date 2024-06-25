@@ -2,11 +2,16 @@
 
 # SAE Bras robotisé avec M5 Stack Fire
 
-### Ceci est un projet du département GEII de l'Institut Universitaire de Technologie de Mulhouse.
+### Ceci est un projet du département GEii de l'Institut Universitaire de Technologie de Mulhouse
 
-##### Membres de la SAE : SAHIN Eren / PRIZZI-SCHERER Benjamin / SCHMITT Thomas
+### Membres de la SAE :
+- SAHIN Eren
+- PRIZZI-SCHERER Benjamin
+- SCHMITT Thomas
 
-##### Professeurs tuteur de la SAE : M. HUEBER Eric / M. MOURLLION Benjamin
+### Professeurs tuteur de la SAE :
+- M. HUEBER Eric
+- M. MOURLLION Benjamin
 
 # Sommaire
 
@@ -68,8 +73,6 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Mindview%202.png" width="800">
 
 
-***
-
 # Étapes du projet :
 
 - Création d'un mode manuel utilisant des boutons pour chacun des 5 moteurs
@@ -119,7 +122,6 @@ Il sont situer pour bloquer :
 
 - M5 : le mouvement horaire de la base (CW)
 
-***
 
 # Utilisation du M5 Stack Fire (UART, I2C)
 
