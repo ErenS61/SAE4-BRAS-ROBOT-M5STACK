@@ -178,14 +178,14 @@ void loop() {
   }
   
   else if (buttonState5_M3_HAUT == LOW) {
-    analogWrite(pinEnableB, 60);  // Pleine vitesse (255 correspond à 100%)
+    analogWrite(pinEnableB, 75);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput5, LOW);  // Sens antihoraire
     digitalWrite(pinInput6, HIGH);
   }
 
 // Si le bouton de descente est enfoncé, activer le moteur vers le bas
   else if (buttonState6_M3_BAS == LOW && etatFinCourseM3 == HIGH) {
-    analogWrite(pinEnableB, 60);  // Pleine vitesse (255 correspond à 100%)
+    analogWrite(pinEnableB, 75);  // Pleine vitesse (255 correspond à 100%)
     digitalWrite(pinInput5, HIGH);  // Sens antihoraire
     digitalWrite(pinInput6, LOW);
   }
