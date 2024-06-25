@@ -14,7 +14,20 @@
 2. [Matériel à notre disposition](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#mat%C3%A9riel-%C3%A0-notre-disposition)
 3. [Planning prévisionnel](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#planning-pr%C3%A9visionnel)
 4. [Étapes du projet](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#%C3%A9tapes-du-projet-)
- 
+   1. [Utilisation du mode manuel](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#utilisation-du-mode-manuel-)
+5. [Utilisation du M5 Stack Fire (UART, I2C)](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#utilisation-du-m5-stack-fire-uart-i2c)
+   1. [Comment ça marche ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#comment-%C3%A7a-marche-)
+   2. [Ce qu'on a essayé](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#ce-quon-a-essay%C3%A9)
+   3. [Pourquoi ça n'a pas marché ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#pourquoi-%C3%A7a-na-pas-march%C3%A9-)
+ 6. [Application smartphone](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#application-smartphone)
+ 7. [Le Bluetooth](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#le-bluetooth)
+ 8. [Passage du M5 Stick C Plus au M5 Stack Dial puis au M5 Stack Fire](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#passage-du-m5-stick-c-plus-au-m5-stack-dial-puis-au-m5-stack-fire)
+ 9. [Capteur de fin de course](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#capteur-de-fin-de-course)
+ 10. [Commande de contre-inertie](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#commande-de-contre-inertie)
+ 11. [Vid"o de fonctionnement](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#vid%C3%A9o-de-fonctionnement)
+ 12. [Galerie](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#galerie)
+ 13. [Schématisation de fonctionnement](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#sch%C3%A9matisation-de-fonctionnement)
+ 14. [Connexion entre deux Arduino Mega 2560](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#connexion-entre-deux-arduino-mega-2560)
 
 
 # Contexte
@@ -52,7 +65,7 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 
 - Trouver comment connecter en Bluetooth l'application et le M5 Stack Fire
 
-### Utilisation mode manuel :
+## Utilisation du mode manuel :
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Bouton%20robot.jpeg" width="700">
 
@@ -91,23 +104,22 @@ Il sont situer pour bloquer :
 
 ***
 
-# Utilisation du M5 Stack Fire (UART, I2C etc)
+# Utilisation du M5 Stack Fire (UART, I2C)
 
-## Comment ça marche ?
+### Comment ça marche ?
 
 Pour manipuler l'Arduino Mega 2560 sans utiliser les boutons, nous avons dû apprendre à utiliser et programmer sur M5 Stack, nous avont utiliser pour ce projet un M5 Stick C Plus au début avant de passer au M5 Stack Fire.
 
-## Ce qu'on a essayé
+### Ce qu'on a essayé
 
 Dans un premier temps nous avons commencé à programmer sur un M5 sticks C + pour nous familiariser avec l'interface, nous avons décidé d'utiliser une communication UART entre le M5 stacks et l'arduino, que ce soit sur le stick c sur le stack fire, car nous pensions que cette forme de communication était la plus pratique et facile à programmer, l'idée devait être simple, on envoie un signal par le port/fils de transmission vers le port récepteur de l'arduino et on renvoyait un signal depuis un port de transmission de l'arduino vers le port/fils de transmission vers le port récepteur de l'arduino et on renvoyait un signal depuis un port de transmission de l'arduino vers le port de réception du M5 stacks (développer au besoin)
 
-## Pourquoi ça n'a pas marché ?
+### Pourquoi ça n'a pas marché ?
 
 Cependant sur le M5 Stacks Fire nous avons rencontré un problème de communication entre l'arduino et le M5 stacks que nous avons pensés venu d'une particularité de conception venant du stack causant une grande perplexité pour nous, selon plusieurs forums parlant de M5 stack et de problème de communication, parle des ports 16 et 17 de ce dernier censé servir à l'UART mais qui est utilisé en interne du stack pour l'utilisation de RAM supplémentaire, nous avons donc pensé que nos problèmes de communication entre arduino et M5 stacks venaient de défaut de ces ports, mais après vérification grace à un oscilloscope nous avons constaté que le M5 stacks envoyait bien un signal vers l'arduino, l'explication la plus probable serait selon nous un problème  au niveau de l'arduino, soit de programmation, l'arduino ne comprend pas ce qu'elle reçoit et donc n'applique pas les ligné de code prévue, mais il est aussi possible que le port de réception ne fonctionne pas tout simplement, nous avons donc essayé de changer de port pour le signal pour avoir le même résultat, les lignes de code ne s'exécutent pas, nous en avons conclu que le problème doit venir de la programmation, mais nous n'avons pas encore trouvé comment régler ce problème à ce jour.
 
-***
 
-### Application smartphone
+# Application smartphone
 
 Une prototype visuelle d'application a été réaliser lors de la SAE grâce au logiciel en ligne MIT App Inventor.
 
@@ -125,9 +137,8 @@ L'application devra répondre aux éxigences suivants :
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Prototype%20application%20SAE.jpg" width="700">
 
-***
 
-### Le Bluetooth
+# Le Bluetooth
 
 Le projet comporte une partie fonctionnant avec le réseau Bluetooth d'un smartphone apparairé au M5 Stack Fire faisant office de commande à distance avec l'application smartphone. Le développement du projet ayant pris du retard, la partie réseau Bluetooth n'a pas pu être abordé.
 
@@ -135,9 +146,8 @@ Néanmoins, nous joignons ci-joint un lien vidéo vers un tutoriel sur l'utilisa
 
 https://youtu.be/E495XIsM1PI?si=JN3kD0oYo0OMLb5L
 
-***
 
-### Passage du M5 Stick C Plus au M5 Stack Dial puis au M5 Stack Fire
+# Passage du M5 Stick C Plus au M5 Stack Dial puis au M5 Stack Fire
 
 Lors du commencement du projet, nous avions à notre disposition un M5 Stick C Plus. Un affichage de différents données était envisager sur le M5 Stick C Plus ainsi que le pilotage depuis cette appareil. Le M5 Stick C Plus étant trop petit, et les boutons étant difficile à utiliser, nous avons dû changer pour un autre mdèle de la même marque.
 
@@ -145,15 +155,13 @@ Nous somme ensuite passer au M5 Stack Dial. Le Dial, avec ça forme cylindrique,
 
 À la fin, nous sommes passer au M5 Stack Fire. Le Fire, avec ça forme cubique, son écran assez grand ainsi que les boutons facile à manipuler, était le choix idéal pour notre projet. Elle embarquait également une carte Wi-Fi, un réseau Bluetooth, des périphériques GPIO, UART, I2C ce qui allait nous être utile.
 
-***
 
-### Capteur fin de course
+# Capteur de fin de course
 
 Les capteurs de fin de course ont constitué une étape essentiel lors de cette SAE, en effet, comme leurs noms l'indique ils sont placé en fin de course, c'est-à-dire en bout de parcours de notre bras robot. Chacun des moteurs du bras robot possédait un capteurs de fin de course. Leurs but était de stoper le mouvement d'un des moteurs afin que le moteurs ne force pas sur les pièces du bras et donc n'endommage pas le bras robot. Le principe de codage était très simple, Tant que le capteur est inactif, le moteur conitue son chemin, dès lors que le capteur est actif le moteur s'arrête. Tant que le capteur est actif, le moteur ne pourra plus effectuer de rotation vers le capteur, le seul moyen est de simplement faire donctionner le moteur dans l'autre sens afin de déploquer le capteur. Grâce à cela nous avons pu mettre en place un programme de "position initial". Nous avons juste définit cette position à l'aide des capteurs de fin de course en décidant de tous les activer dans un ordre spécifique afin que le bras ne frotte pas contre le sol. Le seul problème restant, c'est que même si le moteur s'arrête au contacte du capteur, il restera tout de même une inertie que le moteur ne peut pas arrêter tout seul. Nous verrons dans le paragraphe suivant comment cela a été contré.
 
-***
 
-### Commande de contre-inertie
+# Commande de contre-inertie
 
 Pour contrer l'inertie que nos moteurs avaient lorsque le boutons d'activation n'était plus actif ou encore quand un capteur était actif, nous avions pensé à plusieurs solutions:
 
@@ -165,15 +173,13 @@ Pour contrer l'inertie que nos moteurs avaient lorsque le boutons d'activation n
 
 Nous n'avons hélas pensé bien trop tard à la troisième solution mais c'est probablement celle qui marcherais le mieux dans le cadre de cette SAE et ce qui serais le plus simple
 
-***
 
-### Vidéo de fonctionnement
+# Vidéo de fonctionnement
 
 Vous trouverez une vidéo de fonctionnement du bras robotisé avec les capteurs de fin de course en cliquant sur le lien suivant : [2024-06-13 17-11-58.mov - pCloud](https://e.pcloud.link/publink/show?code=XZC2WTZM2XJ8fAjkUpYA8yUIihxYz4K05H7)
 
-***
 
-### Galerie
+# Galerie
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/IMAGE%201.JPEG" width="700">
 
@@ -181,13 +187,13 @@ Vous trouverez une vidéo de fonctionnement du bras robotisé avec les capteurs 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/IMAGE%203.JPEG" width="700">
 
-***
 
-### Schématisation de fonctionnement
+# Schématisation de fonctionnement
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Sch%C3%A9matisation%20fonctionnement.png" width="1000">
 
-### Connexion entre deux Arduino Mega 2560
+
+# Connexion entre deux Arduino Mega 2560
 
 <img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Sender_reciver_Arduino.gif">
 
