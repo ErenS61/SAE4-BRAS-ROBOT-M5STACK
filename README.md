@@ -69,9 +69,11 @@ Un bouton "Home" servant a remmetre le bras dans une potion initiale (en cours)
 
 Un bouton ON/OFF est aussi présent
 
-Si 2 boutons agisant sur un même moteur sont presser seul l'un d'entre sera pris en compte
+Si 2 boutons agisant sur un même moteur sont presser, seul l'un d'entre sera pris en compte
 
-Chaque moteur possède un capteur de fin de course empêchant au bras de continuer et de s'endommager. Il sont situer pour bloquer :
+Chaque moteur possède un capteur de fin de course empêchant au bras de continuer et de s'endommager.
+
+Il sont situer pour bloquer :
 
 - M1: l'ouverture de la pince
 
