@@ -10,7 +10,7 @@
 
 # Sommaire
 
-1. [Contexte](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#contexte)
+1. [Présentation du projet](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#contexte)
 
 2. [Matériel à notre disposition](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#mat%C3%A9riel-%C3%A0-notre-disposition)
 
@@ -47,7 +47,7 @@
  14. [Connexion entre deux Arduino Mega 2560](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#connexion-entre-deux-arduino-mega-2560)
 
 
-# Contexte
+# Présentation du projet
 
 Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 Stack Fire et potentiellement avec une application smartphone qui servira aussi de retour d'informations.
 
