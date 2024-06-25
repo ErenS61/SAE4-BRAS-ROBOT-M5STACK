@@ -19,7 +19,7 @@
    1. [Comment ça marche ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#comment-%C3%A7a-marche-)
    2. [Ce qu'on a essayé](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#ce-quon-a-essay%C3%A9)
    3. [Pourquoi ça n'a pas marché ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#pourquoi-%C3%A7a-na-pas-march%C3%A9-)
- 6. [Application smartphone](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK#application-smartphone)
+ 6. [Application smartphone](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#application-smartphone)
  7. [Le Bluetooth](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#le-bluetooth)
  8. [Passage du M5 Stick C Plus au M5 Stack Dial puis au M5 Stack Fire](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#passage-du-m5-stick-c-plus-au-m5-stack-dial-puis-au-m5-stack-fire)
  9. [Capteur de fin de course](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/edit/main/README.md#capteur-de-fin-de-course)
