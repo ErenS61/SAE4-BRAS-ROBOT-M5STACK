@@ -25,25 +25,17 @@
 - [Utilisation du M5 Stack Fire (UART, I2C)](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#utilisation-du-m5-stack-fire-uart-i2c)
   - [Comment ça marche ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#comment-%C3%A7a-marche-)
   - [Ce qu'on a essayé](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#ce-quon-a-essay%C3%A9)
-    
-    [Pourquoi ça n'a pas marché ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#pourquoi-%C3%A7a-na-pas-march%C3%A9-)
-    - [Application smartphone](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#application-smartphone)
-    
-    - [Le Bluetooth](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#le-bluetooth)
-    
-    - [Passage du M5 Stick C Plus au M5 Stack Dial puis au M5 Stack Fire](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#passage-du-m5-stick-c-plus-au-m5-stack-dial-puis-au-m5-stack-fire)
-    
-    - [Capteur de fin de course](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#capteur-de-fin-de-course)
-    
-    - [Commande de contre-inertie](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#commande-de-contre-inertie)
-    
-    - [Vidéo de fonctionnement](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#vid%C3%A9o-de-fonctionnement)
-    
-    - [Galerie](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#galerie)
-    
-    - [Schématisation de fonctionnement](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#sch%C3%A9matisation-de-fonctionnement)
-    
-    - [Connexion entre deux Arduino Mega 2560](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#connexion-entre-deux-arduino-mega-2560)
+  - [Pourquoi ça n'a pas marché ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#pourquoi-%C3%A7a-na-pas-march%C3%A9-)
+- [Application smartphone](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#application-smartphone)  
+- [Le Bluetooth](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#le-bluetooth)
+ - [Passage du M5 Stick C Plus au M5 Stack Dial puis au M5 Stack Fire](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#passage-du-m5-stick-c-plus-au-m5-stack-dial-puis-au-m5-stack-fire)
+  - [Capteur de fin de course](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#capteur-de-fin-de-course)
+- [Commande de contre-inertie](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#commande-de-contre-inertie)
+- [Vidéo de fonctionnement](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#vid%C3%A9o-de-fonctionnement)
+- [Galerie](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#galerie)
+- [Schématisation de fonctionnement](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#sch%C3%A9matisation-de-fonctionnement)
+- [Connexion entre deux Arduino Mega 2560](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#connexion-entre-deux-arduino-mega-2560)
+- [Lien URL externe utile au projet](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#lien-url-externe-utile-au-projet)
 
 # Présentation du projet
 
