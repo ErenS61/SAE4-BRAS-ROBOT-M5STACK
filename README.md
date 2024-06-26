@@ -25,15 +25,24 @@
 - [Utilisation du M5 Stack Fire (UART, I2C)](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#utilisation-du-m5-stack-fire-uart-i2c)
   - [Comment ça marche ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#comment-%C3%A7a-marche-)
   - [Ce qu'on a essayé](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#ce-quon-a-essay%C3%A9)
-    - [Pourquoi ça n'a pas marché ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#pourquoi-%C3%A7a-na-pas-march%C3%A9-)
+    
+    [Pourquoi ça n'a pas marché ?](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#pourquoi-%C3%A7a-na-pas-march%C3%A9-)
     - [Application smartphone](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#application-smartphone)
+    
     - [Le Bluetooth](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#le-bluetooth)
+    
     - [Passage du M5 Stick C Plus au M5 Stack Dial puis au M5 Stack Fire](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#passage-du-m5-stick-c-plus-au-m5-stack-dial-puis-au-m5-stack-fire)
+    
     - [Capteur de fin de course](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#capteur-de-fin-de-course)
+    
     - [Commande de contre-inertie](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#commande-de-contre-inertie)
+    
     - [Vidéo de fonctionnement](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#vid%C3%A9o-de-fonctionnement)
+    
     - [Galerie](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#galerie)
+    
     - [Schématisation de fonctionnement](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#sch%C3%A9matisation-de-fonctionnement)
+    
     - [Connexion entre deux Arduino Mega 2560](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK?tab=readme-ov-file#connexion-entre-deux-arduino-mega-2560)
 
 # Présentation du projet
@@ -80,13 +89,13 @@ Le but de ce projet est de piloter un bras robotisé grâce au contrôleur M5 St
 
 - M5 contrôle le moteur de la base du bras tourant en sens horaire et antihoraire (CW = sens horaire / CCW = sens anti-horaire)
 
-Il y a aussi un bouton permettant d'allumer et d'éteindre la lampe en bout de la pince
+- Un bouton permettant d'allumer et d'éteindre la lampe au bout de la pince
 
-Un bouton "Home" servant a remmetre le bras dans une potion initiale (en cours)
+- Un bouton "Home" servant a remmetre le bras dans une potion initiale
 
-Un bouton ON/OFF est aussi présent
+- Un bouton ON/OFF
 
-Si 2 boutons agisant sur un même moteur sont presser, seul l'un d'entre sera pris en compte
+Si 2 boutons agisant sur un même moteur sont presser, seul l'un d'entre sera pris en compte.
 
 Chaque moteur possède un capteur de fin de course empêchant au bras de continuer et de s'endommager.
 
@@ -110,11 +119,13 @@ Pour manipuler l'Arduino Mega 2560 sans utiliser les boutons, nous avons dû app
 
 ### Ce qu'on a essayé
 
-Dans un premier temps nous avons commencé à programmer sur un M5 sticks C + pour nous familiariser avec l'interface, nous avons décidé d'utiliser une communication UART entre le M5 stacks et l'arduino, que ce soit sur le stick c sur le stack fire, car nous pensions que cette forme de communication était la plus pratique et facile à programmer, l'idée devait être simple, on envoie un signal par le port/fils de transmission vers le port récepteur de l'arduino et on renvoyait un signal depuis un port de transmission de l'arduino vers le port/fils de transmission vers le port récepteur de l'arduino et on renvoyait un signal depuis un port de transmission de l'arduino vers le port de réception du M5 stacks (développer au besoin)
+Dans un premier temps, nous avons commencé à programmer sur un M5 Stick C Plus pour nous familiariser avec l'interface. Par la suite, nous avons décidé d'utiliser une communication UART entre le M5 et l'Arduino Mega 2560, que ce soit sur le M5 Stick C Plus ou sur le M5 Stack Fire, car nous pensions que cette forme de communication était la plus pratique et facile à programmer.
+
+La manipulation entre les deux appareils était réaliser de la sorte à ce que le port de transmission de données (TX) du M5 Stack Fire soit relié au port de réception (RX) de l'Arduino Mega 2560 et le port de transmission de données (TX) de l'Arduino Mega 2560 soit relier au port de réception (RX) du M5 Stack Fire.
 
 ### Pourquoi ça n'a pas marché ?
 
-Cependant sur le M5 Stacks Fire nous avons rencontré un problème de communication entre l'arduino et le M5 stacks que nous avons pensés venu d'une particularité de conception venant du stack causant une grande perplexité pour nous, selon plusieurs forums parlant de M5 stack et de problème de communication, parle des ports 16 et 17 de ce dernier censé servir à l'UART mais qui est utilisé en interne du stack pour l'utilisation de RAM supplémentaire, nous avons donc pensé que nos problèmes de communication entre arduino et M5 stacks venaient de défaut de ces ports, mais après vérification grace à un oscilloscope nous avons constaté que le M5 stacks envoyait bien un signal vers l'arduino, l'explication la plus probable serait selon nous un problème  au niveau de l'arduino, soit de programmation, l'arduino ne comprend pas ce qu'elle reçoit et donc n'applique pas les ligné de code prévue, mais il est aussi possible que le port de réception ne fonctionne pas tout simplement, nous avons donc essayé de changer de port pour le signal pour avoir le même résultat, les lignes de code ne s'exécutent pas, nous en avons conclu que le problème doit venir de la programmation, mais nous n'avons pas encore trouvé comment régler ce problème à ce jour.
+Sur le M5 Stack Fire, nous avons rencontré un problème de communication entre l'Arduino et le M5 Stack Fire. Nous pensions initialement que ce problème était dû à une particularité de conception du M5 Stack Fire, ce qui nous a causé une grande perplexité. Selon plusieurs forums discutant des problèmes de communication avec le M5 Stack Fire, les ports 16 et 17, normalement utilisés pour l'UART, sont réaffectés en interne pour l'utilisation de RAM supplémentaire. Nous avons donc suspecté que nos problèmes de communication provenaient de ces ports défectueux. Cependant, après vérification avec un oscilloscope, nous avons constaté que le M5 Stack Fire envoyait bien un signal à l'Arduino. L'explication la plus probable est donc un problème au niveau de l'Arduino, soit au niveau de la programmation, où l'Arduino ne comprend pas le signal reçu et n'exécute pas les lignes de code prévues, soit au niveau du port de réception qui pourrait être défectueux. Nous avons essayé de changer de port pour le signal, mais le résultat est resté le même : les lignes de code ne s'exécutent pas. Nous avons donc conclu que le problème vient probablement de la programmation, mais nous n'avons pas encore trouvé comment le résoudre.
 
 # Application smartphone
 
@@ -152,19 +163,19 @@ Nous somme ensuite passer au M5 Stack Dial. Le Dial, avec ça forme cylindrique,
 
 # Capteur de fin de course
 
-Les capteurs de fin de course ont constitué une étape essentiel lors de cette SAE, en effet, comme leurs noms l'indique ils sont placé en fin de course, c'est-à-dire en bout de parcours de notre bras robot. Chacun des moteurs du bras robot possédait un capteurs de fin de course. Leurs but était de stoper le mouvement d'un des moteurs afin que le moteurs ne force pas sur les pièces du bras et donc n'endommage pas le bras robot. Le principe de codage était très simple, Tant que le capteur est inactif, le moteur conitue son chemin, dès lors que le capteur est actif le moteur s'arrête. Tant que le capteur est actif, le moteur ne pourra plus effectuer de rotation vers le capteur, le seul moyen est de simplement faire donctionner le moteur dans l'autre sens afin de déploquer le capteur. Grâce à cela nous avons pu mettre en place un programme de "position initial". Nous avons juste définit cette position à l'aide des capteurs de fin de course en décidant de tous les activer dans un ordre spécifique afin que le bras ne frotte pas contre le sol. Le seul problème restant, c'est que même si le moteur s'arrête au contacte du capteur, il restera tout de même une inertie que le moteur ne peut pas arrêter tout seul. Nous verrons dans le paragraphe suivant comment cela a été contré.
+Les capteurs de fin de course ont joué un rôle essentiel lors de cette SAE. Comme leur nom l'indique, ils sont placés en fin de course, c'est-à-dire à l'extrémité du parcours de notre bras robot. Chaque moteur du bras robot était équipé d'un capteur de fin de course. Leur objectif était d'arrêter le mouvement d'un moteur pour éviter qu'il ne force sur les pièces du bras et ne les endommage. Le principe de codage était très simple : tant que le capteur est inactif, le moteur continue de fonctionner. Dès que le capteur est activé, le moteur s'arrête. Tant que le capteur est actif, le moteur ne peut plus tourner dans cette direction ; il doit fonctionner dans le sens opposé pour débloquer le capteur. Grâce à ce mécanisme, nous avons pu mettre en place un programme de "position initiale". Nous avons défini cette position en activant tous les capteurs dans un ordre spécifique, afin que le bras ne frotte pas contre le sol. Le seul problème restant est que, même si le moteur s'arrête au contact du capteur, il y a toujours une inertie que le moteur ne peut pas arrêter seul.
 
 # Commande de contre-inertie
 
-Pour contrer l'inertie que nos moteurs avaient lorsque le boutons d'activation n'était plus actif ou encore quand un capteur était actif, nous avions pensé à plusieurs solutions:
+Pour contrer l'inertie de nos moteurs lorsque le bouton d'activation n'était plus actif ou lorsqu'un capteur était activé, nous avons envisagé plusieurs solutions :
 
-- La première était de remplacer nos moteurs par des servo-moteurs, mais il aurait fallu changer toute la structure du robot et ce n'était pas ce que nous recherchions dans le projet.
+- La première consistait à remplacer nos moteurs par des servo-moteurs, mais cela aurait nécessité de changer toute la structure du robot, ce qui n'était pas l'objectif de notre projet.
 
-- La seconde était de créer un programme qui lorsque le boutons est relaché, pendant un court temps on envoie un signal de tension négatif afin de compenser cette fameuse inertie qui nous enlève énormément de précision lors de manipulation et qui pourrait endommager les moteurs. 
+- La deuxième solution était de créer un programme qui, lorsque le bouton est relâché, envoie un signal de tension négatif pendant un court instant afin de compenser l'inertie, qui réduit considérablement la précision de nos manipulations et peut endommager les moteurs.
 
-- Et la troisième qui était d'étudier les ponts en H à notre disposition afin d'effectuer la même manipulation que la seconde solution mais non directement via programme. Le principe d'utilisation est de causer un court-circuit volontaire au niveau des bornes du moteur et donc le faire freiner. Cette manipulation fonctionne sur les deux pins d'un même moteur (par exemple: In1A et In2A), le pont en H utilise un L298n ([Datasheet L298N](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Documentation/l298.pdf)) qui a deux pont en H en lui.
+- La troisième solution consistait à étudier les ponts en H à notre disposition pour réaliser la même opération que la deuxième solution, mais de manière matérielle plutôt que par programmation. Le principe était de provoquer un court-circuit volontaire au niveau des bornes du moteur pour le freiner. Cette manipulation fonctionne sur les deux broches d'un même moteur (par exemple : In1A et In2A). Le pont en H utilise un L298N ([Datasheet L298N](https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Documentation/l298.pdf)), qui contient deux ponts en H.
 
-Nous n'avons hélas pensé bien trop tard à la troisième solution mais c'est probablement celle qui marcherais le mieux dans le cadre de cette SAE et ce qui serais le plus simple
+Malheureusement, nous avons pensé à la troisième solution trop tard, mais c'est probablement celle qui fonctionnerait le mieux dans le cadre de cette SAE et serait la plus simple à mettre en œuvre.
 
 # Vidéo de fonctionnement
 
@@ -178,24 +189,24 @@ Voici le bras robot sur lequel nous avons travaillé.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/IMAGE%202.JPEG" width="700">
 
-Sur cette image nous pouvons voir sur la droite deux pont en H relié à notre Arduino Mega 2560 qui lui se trouve sur la gauche. Les fils en bas de l'image sont les entrées/sorties pour les commandes du robot en automatique ainsi qu'en manuel. 
+Sur cette image nous pouvons voir sur la droite deux ponts en H relié à notre Arduino Mega 2560 qui lui se trouve sur la gauche. Les fils en bas de l'image sont les entrées/sorties pour les commandes du robot en automatique ainsi qu'en manuel. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/IMAGE%203.JPEG" width="700">
 
-Notre M5 Stack Fire est directement relié aux entrées/Sorties de notre Arduino Mega 2560 en liaison UART.
+Notre M5 Stack Fire est directement relié aux entrées/sorties de notre Arduino Mega 2560 en liaison UART.
 
 # Schématisation de fonctionnement
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Sch%C3%A9matisation%20fonctionnement.png" width="1000">
 
-Dans ce projet nous devons crontrôler le bras robot avec un Aduino Mega 2560 qui sera relié à notre M5 Stack Fire qui nous servira de passerelle Bluetooth pour communiquer à distance avec un smartphone qui pourra diriger le robot à distance.
+Dans ce projet nous devons crontrôler le bras robot avec un Aduino Mega 2560 qui sera relié à notre M5 Stack Fire qui nous servira de passerelle Bluetooth pour communiquer à distance avec un smartphone afin de le contrôler.
 
 # Connexion entre deux Arduino Mega 2560
 
 <img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Sender_reciver_Arduino.gif">
 
-On a pu observé grâce à Putty la connexion entre deux Arduino Mega 2560. L'écran de droite envoie une trame pendant que l'écran de gauche la reçoit.
+On a pu observé grâce au logiciel PuTTY la connexion entre deux Arduino Mega 2560. L'écran de droite envoie une trame pendant que l'écran de gauche la reçoit.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Sch%C3%A9matisation%20Arduino.png" width="700">
 
-Le câble réalisé est simple, l'Arduino de gauche, celui qui envoie les données, doit brancher son TX au RX de l'Arduino de droite et son RX au TX. La liaison effectué est toujours en UART car l'envoie de données est bien plus rapide.
+Le câblage réalisé est simple : l'Arduino de gauche, celui qui envoie les données, doit connecter son TX au RX de l'Arduino de droite et son RX au TX de l'Arduino de droite. La liaison est effectuée en UART, car l'envoi de données est bien plus rapide.
