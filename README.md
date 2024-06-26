@@ -213,7 +213,7 @@ On a pu observé grâce au logiciel PuTTY la connexion entre deux Arduino Mega 2
 
 Le câblage réalisé est simple : l'Arduino de gauche, celui qui envoie les données, doit connecter son TX au RX de l'Arduino de droite et son RX au TX de l'Arduino de droite. La liaison est effectuée en UART, car l'envoi de données est bien plus rapide.
 
-# Lien externe utile au projet
+# Lien URL externe utile au projet
 
 - [Communication serie entre Arduino MEGA et ESP32 - #11 par fullproject - Français - Arduino Forum](https://forum.arduino.cc/t/communication-serie-entre-arduino-mega-et-esp32/1139015/11)
 
