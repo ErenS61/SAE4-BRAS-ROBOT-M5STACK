@@ -210,3 +210,13 @@ On a pu observé grâce au logiciel PuTTY la connexion entre deux Arduino Mega 2
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/ErenS61/SAE4-BRAS-ROBOT-M5STACK/blob/main/Images/Sch%C3%A9matisation%20Arduino.png" width="700">
 
 Le câblage réalisé est simple : l'Arduino de gauche, celui qui envoie les données, doit connecter son TX au RX de l'Arduino de droite et son RX au TX de l'Arduino de droite. La liaison est effectuée en UART, car l'envoi de données est bien plus rapide.
+
+# Lien externe utile au projet
+
+- [Communication serie entre Arduino MEGA et ESP32 - #11 par fullproject - Français - Arduino Forum](https://forum.arduino.cc/t/communication-serie-entre-arduino-mega-et-esp32/1139015/11)
+
+- [M5 Stick C programming in arduino IDE | led blink - YouTube](https://www.youtube.com/watch?v=o0hsjQgRNRk)
+
+- [M5Stack Fire Adventures in BLE and MIT APP inventor - YouTube](https://youtu.be/E495XIsM1PI?si=JN3kD0oYo0OMLb5L)
+
+- [M5Stack UiFlow for Beginners - Lesson 13 - What is UART? - YouTube](https://www.youtube.com/watch?v=zSUyC-SQOEU)
